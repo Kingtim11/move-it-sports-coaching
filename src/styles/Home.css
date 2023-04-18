@@ -1,0 +1,25 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+.main-container {
+    position: relative;
+    
+}
+.container1 {
+    position: relative;
+    margin: auto;
+    top: 50px;
+    height: 100%;
+    width: 45%;
+    background-image: url("../assets/images/moveit3.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.container2 {
+    position: relative;
+    background-color: purple;
+}

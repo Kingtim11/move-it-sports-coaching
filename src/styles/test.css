@@ -1,4 +1,4 @@
-@import url("fontawesome-all.min.css");
+
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900");
 
 /*
@@ -1672,7 +1672,7 @@ input, select, textarea {
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #e97770 url("../assets/images/overlay.png");
 			color: #fff;
 		}
 
@@ -1723,7 +1723,7 @@ input, select, textarea {
 		input[type="reset"].style3,
 		button.style3,
 		.button.style3 {
-			background: #2f333b url("images/overlay.png");
+			background: #2f333b url("../assets/images/overlay.png");
 			color: #fff;
 		}
 
@@ -1859,7 +1859,7 @@ input, select, textarea {
 			.feature-list h3:before {
 				display: block;
 				color: #fff;
-				background: #2f333b url("images/overlay.png");
+				background: #2f333b url("../assets/images/overlay.png");
 				border-radius: 2.5em;
 				text-align: center;
 				width: 2.5em;
@@ -1985,7 +1985,7 @@ input, select, textarea {
 				left: -35px;
 				width: 35px;
 				height: 38px;
-				background: url("images/shadow.png");
+				background: url("../assets/images/shadow.png");
 			}
 
 			.wrapper .title:after {
@@ -1999,17 +1999,17 @@ input, select, textarea {
 				right: -35px;
 				width: 35px;
 				height: 38px;
-				background: url("images/shadow.png");
+				background: url("../assets/images/shadow.png");
 			}
 
 		.wrapper.style1 {
-			background: rgba(80, 181, 85, 1) url("images/overlay.png");
+			background: rgba(80, 181, 85, 1) url("../assets/images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: rgba(80, 181, 85, 1) url("images/overlay.png");
+				background: rgba(80, 181, 85, 1) url("../assets/images/overlay.png");
 				color: #fff;
 			}
 
@@ -2027,17 +2027,42 @@ input, select, textarea {
 			}
 
 		.wrapper.style3 {
-			background: #f3f3f3 url("images/overlay.png");
+			background: #f3f3f3 url("../assets/images/overlay.png");
 		}
 
 			.wrapper.style3 .title {
-				background: #f3f3f3 url("images/overlay.png");
+				background: #f3f3f3 url("../assets/images/overlay.png");
 				color: #484d55;
 			}
 
 			.wrapper.style3 .image {
 				border: solid 10px #fff;
 			}
+		
+		/* Booking Page */
+		
+		.wrapper.style4 {
+			background: #fff;
+			padding-top: 100px;
+		}
+
+			.wrapper.style4 .title {
+				background: #fff;
+				color: #484d55;
+			}
+
+			.wrapper.style4 .image {
+				border: solid 10px #fff;
+			}
+		
+			.iframewrapper {
+				position: relative;
+				overflow: hidden;
+				top: 100px;
+				height: fit-content;
+			}
+			
+			
 
 /* Page Wrapper */
 
@@ -2076,11 +2101,14 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background: url("images/overlay.png");
+			background: url("../assets/images/overlay.png");
 		}
 
 		.homepage #header {
 			height: 35em;
+		}
+		.bookingpage #header {
+			height: 15em;
 		}
 
 /* Logo */
@@ -2090,7 +2118,7 @@ input, select, textarea {
 		top: 50px;
 		height: 100%;
 		width: 45%;
-		background-image: url("../../images/moveit3.jpeg");
+		background-image: url("../assets/images/moveit3.jpeg");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -2100,8 +2128,8 @@ input, select, textarea {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background: url("images/overlay.png");
-	}
+		background-image: url("../assets/images/overlay.png");
+    }
 
 	/*Original logo settings removed.
 	#logo {
@@ -2185,7 +2213,7 @@ input, select, textarea {
 				}
 
 	.dropotron {
-		background: #222835 url("images/overlay.png");
+		background: #222835 url("../assets/images/overlay.png");
 		background-color: rgba(46,153,214, 0.9);
 		padding: 1.25em 1em 1.25em 1em;
 		border-radius: 0.35em;
@@ -2301,7 +2329,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #282b34 url("images/overlay.png");
+		background: #282b34 url("../assets/images/overlay.png");
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 6em;
@@ -2368,7 +2396,7 @@ input, select, textarea {
 			}
 
 		#footer .title {
-			background: #282b34 url("images/overlay.png");
+			background: #282b34 url("../assets/images/overlay.png");
 			color: #eee;
 		}
 
@@ -2395,7 +2423,7 @@ input, select, textarea {
 			}
 
 			#footer .feature-list h3:before {
-				background: #3d4249 url("images/overlay.png");
+				background: #3d4249 url("../assets/images/overlay.png");
 			}
 
 /* Copyright */
@@ -2700,7 +2728,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #242730 url("images/overlay.png");
+				background: #242730 url("../assets/images/overlay.png");
 				box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
 			}
 
