@@ -8,6 +8,7 @@ import Team from "../assets/images/team2.jpg";
 import Josh from "../assets/images/josh.jpg";
 import Jabroni from "../assets/images/jabroni.jpg";
 import Bozo from "../assets/images/bozo.jpg";
+import Logo from "../assets/images/moveit3.jpeg";
 
 
 function HomePage() {
@@ -20,25 +21,23 @@ function HomePage() {
                 <section id="header" className="wrapper">
                 
                 {/* Logo */}
-                    <div id="logo" />		 
+                <div className="container-logo">
+                    <img className="logo" src={Logo} alt="The logo for Move it! Sports Coaching. Children playing."/>
+                </div>
+
                 </section>
 
                 {/* Intro */}
                 <section id="intro" className="wrapper style1">
                     <div className="title">Introduction</div>
                     <div className="container">
-                        <p className="style1">
-                            So in case you were wondering what this is all about ...
-                        </p>
-                        <p className="style2">
-							We provide sports coaching for children and young adults<br className="mobile-hide" />
-							of between ages 5 - 11
+                        
+                        <p className="style2"> {/* Adjust the font size and remove border. */}
+                        A sports coaching company based in North Kingston with the aim to install a love of sport 
+                        and physical activity in all children to encourage lifelong participation through running, 
+                        dodging, tagging and ball games. 
 						</p>
-						<p className="style3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Dolores ad magni fugit sed eaque quisquam tempora eum ducimus suscipit,
-                            blanditiis eligendi veritatis molestiae qui? Recusandae at eius cumque rem? Qui!
-                        </p>
+						
                         <ul className="actions">
 							<li>
                                 <Button name="Bookings" buttonStyle="button style3 large" />
@@ -57,28 +56,28 @@ function HomePage() {
                                 <img src={Team} alt="" />
                             </div>
 
-                            {/* Features */}
+                            {/* Features - 3 clubs to choose from. Multi-skill camp centred across the top and other two doubled underneath. */}
                             <section id="features">
                                 <header className="style1">
-                                    <p>We have a team of 5 dedicated coaches on hand to provide blah blah blah</p>
+                                    <p>We have a team of 5 dedicated coaches on hand to provide the following classess</p>
                                 </header>
                                 <div className="feature-list">
                                     <div className="row">
                                         <div className="col-6 col-12-medium">
                                             <section>
-                                                <h3 className="icon fa-comment">Lorem Ipsum</h3>
+                                                <h3 className="icon fa-comment">Multi-skills Camp</h3>
+                                                <p>Fun games and activities to develop fundamental movement skills and encouragelifelong involvement in sport.</p>
+                                            </section>
+                                        </div>
+                                        <div className="col-6 col-12-medium">
+                                            <section>
+                                                <h3 className="icon solid fa-sync">Dodgeball Club</h3>
                                                 <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
                                             </section>
                                         </div>
                                         <div className="col-6 col-12-medium">
                                             <section>
-                                                <h3 className="icon solid fa-sync">Lorem ipsum dolor sit veroeros</h3>
-                                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-                                            </section>
-                                        </div>
-                                        <div className="col-6 col-12-medium">
-                                            <section>
-                                                <h3 className="icon fa-image">Pretium phasellus justo lorem</h3>
+                                                <h3 className="icon fa-image">Birthday Parties</h3>
                                                 <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
                                             </section>
                                         </div>
@@ -170,16 +169,14 @@ function HomePage() {
                             </div>
                             <div className="col-6 col-12-medium">
 
-                                {/* Contact */}
+                                {/* Contact - Phone possiblly coming later. Update instagram icon and link for social.*/}
                                 <section className="feature-list small">
                                     <div className="row">
                                         <div className="col-6 col-12-small">
                                             <section>
-                                                <h3 className="icon solid fa-home">Mailing Address</h3>
+                                                <h3 className="icon solid fa-envelope">Email</h3>
                                                 <p>
-                                                    Untitled Corp<br />
-                                                    1234 Somewhere Rd<br />
-                                                    Nashville, TN 00000
+                                                    <Link to="/">info@untitled.tld</Link>
                                                 </p>
                                             </section>
                                         </div>
@@ -194,21 +191,9 @@ function HomePage() {
                                             </section>
                                         </div>
                                         <div className="col-6 col-12-small">
-                                            <section>
-                                                <h3 className="icon solid fa-envelope">Email</h3>
-                                                <p>
-                                                    <Link to="/">info@untitled.tld</Link>
-                                                </p>
-                                            </section>
+                                            
                                         </div>
-                                        <div className="col-6 col-12-small">
-                                            <section>
-                                                <h3 className="icon solid fa-phone">Phone</h3>
-                                                <p>
-                                                    (000) 555-0000
-                                                </p>
-                                            </section>
-                                        </div>
+                                        
                                     </div>
                                 </section>
                             </div>
