@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 function ContactForm() {
     return (
@@ -15,9 +16,10 @@ function ContactForm() {
                         <textarea className="message" id="contact-message" placeholder="Message" rows="4"></textarea>
                     </div>
                     <div className="col-12">
-                        <ul className="actions">
-                            <li><input type="submit" className="style1" value="Send" /></li>
-                            <li><input type="reset" className="style2" value="Reset" /></li>
+                        <ul className="actions"> 
+                            <li><Button name="Send" buttonStyle="style1" /></li>
+                            <li><Button name="Reset" buttonStyle="style2" /></li>
+                            
                         </ul>
                     </div>
                 </div>
