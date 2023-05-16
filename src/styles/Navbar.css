@@ -120,6 +120,7 @@
                                         }
                                         #nav-expanded #page-wrapper {
                                             transform: translateX(275px);
+                                            transition: all 1s ease;
                                         }
                                         #nav-expanded .nav-button-container {
                                             transform: translateX(275px);
