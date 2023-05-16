@@ -13,7 +13,6 @@ import Logo from "../assets/images/moveit3.jpeg";
 
 function HomePage() {
     return (
-        
         <div className='homepage is-preload'>
             <div id='page-wrapper'>
 
@@ -207,7 +206,7 @@ function HomePage() {
                 </section>
 
             </div>
-        </div> 
+        </div>
     );
 }
 
