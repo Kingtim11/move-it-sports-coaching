@@ -9,6 +9,8 @@ import Josh from "../assets/images/josh.jpg";
 import Jabroni from "../assets/images/jabroni.jpg";
 import Bozo from "../assets/images/bozo.jpg";
 import Logo from "../assets/images/moveit3.jpeg";
+import Sections from '../components/Sections';
+
 
 
 function HomePage() {
@@ -17,46 +19,52 @@ function HomePage() {
             <div id='page-wrapper'>
 
                 {/* Header */}
-                <section id="header" className="wrapper">
-                
-                {/* Logo */}
-                <div className="container-logo">
-                    <img className="logo" src={Logo} alt="The logo for Move it! Sports Coaching. Children playing."/>
-                </div>
-
-                </section>
+                <Sections 
+                    sectionId={'header'}
+                    sectionClassName={'wrapper'}
+                    content={
+                        //Logo
+                        <div className={"container-logo"}>
+                            <img className="logo" src={Logo} alt="The logo for Move it! Sports Coaching. Children playing."/>
+                        </div>
+                    }
+                />
 
                 {/* Intro */}
-                <section id="intro" className="wrapper style1">
-                    <div className="title">Introduction</div>
-                    <div className="container">
-                        
-                        <p className="style2"> {/* Adjust the font size and remove border. */}
-                        A sports coaching company based in North Kingston with the aim to install a love of sport 
-                        and physical activity in all children to encourage lifelong participation through running, 
-                        dodging, tagging and ball games. 
-						</p>
-						
-                        <ul className="actions">
-							<li>
-                                <Button name="Bookings" buttonStyle="button style3 large" />
-                            </li>
-						</ul>
-                    </div>
-                </section>
-
+                <Sections 
+                    sectionId={'intro'} 
+                    sectionClassName={'wrapper style1'}
+                    divClassName={'title'}
+                    sectionHeader={'Introduction'}
+                    content={
+                        <>
+                            <p className="style2"> {/* Adjust the font size and remove border. */}
+                            A sports coaching company based in North Kingston with the aim to install a love of sport 
+                            and physical activity in all children to encourage lifelong participation through running, 
+                            dodging, tagging and ball games. 
+                            </p>
+                            <ul className="actions">
+                                <li>
+                                    <Button name="Bookings" buttonStyle="button style3 large" />
+                                </li>
+                            </ul>
+                        </>
+                    }
+                     />
+                
                 {/* Main */}
-                <section id="main" className="wrapper style2">
-                    <div className="title">what we offer</div>
-                        <div className="container">
-
-                            {/* Image */}
-                            <div className="image featured">
-                                <img src={Team} alt="" />
-                            </div>
-
-                            {/* Features - 3 clubs to choose from. Multi-skill camp centred across the top and other two doubled underneath. */}
-                            <section id="features">
+                <Sections 
+                    sectionId={'main'}
+                    sectionClassName={'wrapper style2'}
+                    divClassName={'title'}
+                    sectionHeader={'What we offer'}
+                    content={
+                        //Update with only 3 features. Birthday parties - Dogdeball club with Multiskills Camp above or below.
+                        <>
+                        <div className="image featured">
+                            <img src={Team} alt="" />
+                        </div>
+                        <section id="features">
                                 <header className="style1">
                                     <p>We have a team of 5 dedicated coaches on hand to provide the following classess</p>
                                 </header>
@@ -113,13 +121,17 @@ function HomePage() {
                                 </li>
                             </ul>
                         </section>
-                    </div>
-                </section>
+                        </>
+                    }
+                />
             
                 {/* Meet the Team */}
-                <section id="highlights" className="wrapper style3">
-                    <div className="title">Meet the team</div>
-                    <div className="container">
+                <Sections 
+                    sectionId={'highlights'}
+                    sectionClassName={'wrapper style3'}
+                    divClassName={'title'}
+                    sectionHeader={'Meet the team'}
+                    content={
                         <div className="row aln-center">
                             <div className="col-4 col-12-medium">
 
@@ -145,13 +157,17 @@ function HomePage() {
                                 />
                             </div>
                         </div>
-                    </div>
-                </section>
-
+                    }
+                />
+                
                 {/* Footer */}
-                <section id="footer" className="wrapper">
-                    <div className="title">Contact</div>
-                    <div className="container">
+                <Sections 
+                    sectionId={'footer'}
+                    sectionClassName={'wrapper'}
+                    divClassName={'title'}
+                    sectionHeader={'Contact'}
+                    content={
+                    <>
                         <header className="style1">
                             <h2>Ipsum sapien elementum portitor?</h2>
                             <p>
@@ -202,9 +218,10 @@ function HomePage() {
                                 <li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-
+                    </>
+                    }
+                />
+                
             </div>
         </div>
     );
