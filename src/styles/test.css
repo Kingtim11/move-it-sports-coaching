@@ -1646,7 +1646,7 @@ input, select, textarea {
 		cursor: pointer;
 		padding: 0 2.25em 0 2.25em;
 		font-size: 0.9em;
-		min-width: 12em;
+		min-width: 4em;
 		height: 4em;
 		line-height: 4em;
 	}
@@ -1743,6 +1743,8 @@ input, select, textarea {
 			.button.style3:active {
 				background-color: #1f232b;
 			}
+
+
 
 /* List */
 
@@ -2115,7 +2117,8 @@ input, select, textarea {
 /* Logo */
 	
 	.logo {
-		width: 50em;
+		width: 45em;
+		margin-top: 6em;
 	}
 
 	/*Logo Container*/
@@ -2157,25 +2160,36 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 			.logo {
 				width: 30em;
+				margin-top: 0;
 			}
 			.container-logo {
 				width: calc(100% - 40px);
 			}
 		}
 
-		@media screen and (max-width: 520px) {
-			.logo {
-				width: 30em;
-			}
+		@media screen and (max-width: 560px) {
+			
 			.container-logo {
 				width: calc(100% - 40px);
 			}
 		}
 
 		@media screen and (max-width: 480px) {
-			.logo {
-				width: 30em;
+			
+			.container-logo {
+				width: calc(100% - 40px);
 			}
+		}
+
+		@media screen and (max-width: 414px) {
+			
+			.container-logo {
+				width: calc(100% - 40px);
+			}
+		}
+
+		@media screen and (max-width: 375px) {
+			
 			.container-logo {
 				width: calc(100% - 40px);
 			}
