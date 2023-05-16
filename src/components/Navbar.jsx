@@ -1,37 +1,43 @@
 import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Navbar.css';
 
-function Navbar() {
-    return (
-        <nav>
-            <ul>
-                <li className="current"><Link to="/">Home</Link></li>
-                <li>
-                    <Link to="/">What we offer</Link>
-                    <ul>
-                        <li><Link to="/">Holiday camp</Link></li>
-                        <li><Link to="/">Dodgeball camp</Link></li>
-                        <li><Link to="/">Birthday parties</Link></li>
-                        <li>
-                            <Link to="/">Team training</Link>
-                            <ul>
-                                <li><Link to="/">Lorem dolor</Link></li>
-                                <li><Link to="/">Amet consequat</Link></li>
-                                <li><Link to="/">Magna phasellus</Link></li>
-                                <li><Link to="/">Etiam nisl</Link></li>
-                                <li><Link to="/">Sed feugiat</Link></li>
-                            </ul>
-                        </li>
-                        <li><Link to="/">one to one</Link></li>
-                    </ul>
-                </li>
-                <li><Link to="/">Meet the team</Link></li>
-                <li><Link to="/bookings">Bookings</Link></li>
-                <li><Link to="/">Contact</Link></li>
-            </ul>
 
-        </nav>
+function Navbar() {
+    const [isNavExpanded, setIsNavExpanded] = useState(false);
+    
+    function handleClick() {
+        setIsNavExpanded(!isNavExpanded);
+        if (!isNavExpanded) {
+            document.body.setAttribute('id', 'nav-expanded');
+          } else {
+            document.body.setAttribute('id', 'nav-menu');
+          }
+    }
+
+    return (
+            <nav className='navigation'>   
+                <div className='nav-button-container'>
+                    <button className='nav-icon' onClick={handleClick}>
+                        <FontAwesomeIcon  icon={faBars} size='xl' color='#2e99d6' />
+                    </button>
+                </div>
+                    
+                    <div className={
+                        isNavExpanded ? 'nav-menu expanded' : 'nav-menu'
+                    }>
+                    <ul>
+                        <li className="current"><Link to="/" onClick={handleClick}>Home</Link></li>
+                        <li><Link to="/" onClick={handleClick}>What we Offer</Link></li>
+                        <li><Link to="/" onClick={handleClick}>Meet the team</Link></li>
+                        <li><Link to="/bookings" onClick={handleClick}>Bookings</Link></li>
+                        <li><Link to="/" onClick={handleClick}>Contact</Link></li>
+                    </ul>
+                </div>
+            </nav>
         
     );
 }
