@@ -13,7 +13,7 @@ import Sections from '../components/Sections';
 
 
 
-function HomePage() {
+export default function HomePage() {
     return (
         <div className='homepage is-preload'>
             <div id='page-wrapper'>
@@ -226,5 +226,3 @@ function HomePage() {
         </div>
     );
 }
-
-export default HomePage;
