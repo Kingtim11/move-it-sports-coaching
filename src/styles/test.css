@@ -2064,6 +2064,9 @@ input, select, textarea {
 				top: 100px;
 				height: fit-content;
 			}
+			iframe {
+				border: 1px solid black;
+			}
 			
 			
 
@@ -2111,7 +2114,15 @@ input, select, textarea {
 			height: 35em;
 		}
 		.bookingpage #header {
-			height: 15em;
+			height: 1em;
+		}
+		@media screen and (max-width: 736px) {
+			.bookingpage #header {
+				height: 1em;
+			}
+			.bookingpage .wrapper {
+				padding: 3em 0 2em 0;
+			}
 		}
 
 /* Logo */
