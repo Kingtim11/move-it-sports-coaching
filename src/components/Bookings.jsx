@@ -3,7 +3,7 @@ import React from "react";
 
 function Bookings() {
     return (
-        
+
             <iframe id="Iframe"
                 src="https://joshua-ayres-sports-coaching.class4kids.co.uk"
                 width="100%" 

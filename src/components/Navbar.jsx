@@ -1,13 +1,25 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Navbar.css';
 
+export default function Navbar() {
 
-function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (!event.target.closest('.nav-menu') && !event.target.closest('.nav-icon')) {
+                document.body.setAttribute('id', 'nav-menu');
+                setIsNavExpanded(false);
+            }
+        }
+        document.addEventListener('click', handleClickOutside)
+        return () => {
+            document.removeEventListener('click', handleClickOutside)
+        }
+    }, []);
     
     function handleClick() {
         setIsNavExpanded(!isNavExpanded);
@@ -17,7 +29,7 @@ function Navbar() {
             document.body.setAttribute('id', 'nav-menu');
           }
     }
-
+    
     return (
             <nav className='navigation'>   
                 <div className='nav-button-container'>
@@ -38,8 +50,5 @@ function Navbar() {
                     </ul>
                 </div>
             </nav>
-        
     );
 }
-
-export default Navbar;
