@@ -45,7 +45,9 @@ export default function HomePage() {
                             </p>
                             <ul className="actions">
                                 <li>
+                                <Link to='bookings'>
                                     <Button name="Bookings" buttonStyle="button style3 large" />
+                                </Link>
                                 </li>
                             </ul>
                         </>

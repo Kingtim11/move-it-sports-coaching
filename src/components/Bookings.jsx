@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function Bookings() {
+export default function Bookings() {
     return (
 
             <iframe id="Iframe"
@@ -14,5 +14,3 @@ function Bookings() {
                 ></iframe>  
     );  
 }
-
-export default Bookings;

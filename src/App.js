@@ -5,19 +5,17 @@ import Navbar from '../src/components/Navbar';
 import BookingPage from '../src/pages/BookingPage';
 
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/bookings' element={<BookingPage />} />
-        
+
         </Routes>
         <Navbar />
       </Router>
     </div>
   );
 }
-
-export default App;

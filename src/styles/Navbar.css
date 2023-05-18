@@ -54,9 +54,11 @@
                                     color: #2e99d6;
                                 }
 
+                                /*Nav button does not display for wide screens*/
                                 @media screen and (min-width: 736px) {
                                     .nav-button-container {
                                         display: none;
+                                        
                                     }
                                 }                     
                                 
@@ -66,17 +68,19 @@
                                     .nav-menu.expanded ul {
                                         display: flex;
                                         position: fixed;
+                                        transform: translateX(0);
+                                        
                                     }
                                     .nav-menu ul {
                                         position: fixed;
-                                        display: none;
+                                        display: flex;
                                         flex-direction: column;
                                         width: 275px;
-                                        height: fit-content;
+                                        transform: translateX(-275px);
+                                        height: 100%;
                                         background-color: #2e99d6;
                                         color: #eee;
-                                        transition: transform 0.5s ease;
-                                        height: 100%;
+                                        transition: all 0.5s ease;
                                         overflow-y: auto;
                                         top: 0;
                                         z-index: 10002;
@@ -109,6 +113,7 @@
                                             border-radius: 0.35rem;
                                             box-shadow: inset 0px 0px 1px 1px rgba(46,153,214, 0.9);
                                             background-color: rgba(46,153,214, 0);
+                                            
                                         }
                                         .nav-icon:hover {
                                             color: #2e99d6;
@@ -123,7 +128,7 @@
                                             transition: all 1s ease;
                                         }
                                         #nav-expanded .nav-button-container {
-                                            transform: translateX(275px);
+                                            transform: translateX(0);
                                         }
                                         
                                     }

@@ -3,7 +3,7 @@ import Button from './Button';
 import { Link } from 'react-router-dom';
 import '../styles/test.css';
 
-function Card({image, teamMember, description }) {
+export default function Card({image, teamMember, description }) {
     return (
         <section className="highlight">
             <div className="image featured"><img src={image} alt="" /></div>
@@ -19,5 +19,3 @@ function Card({image, teamMember, description }) {
         </section>
     );
 }
-
-export default Card;
