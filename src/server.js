@@ -54,6 +54,6 @@ app.post('/send-email', (req, res) => {
   
   app.get('/', (req,res) => { res.send(`Server is running.`) })
 // Start the server
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 8080, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
