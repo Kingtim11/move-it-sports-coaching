@@ -4,10 +4,8 @@ import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import ContactForm from '../components/ContactForm';
-import Team from "../assets/images/team2.jpg";
-import Josh from "../assets/images/josh.jpg";
-import Jabroni from "../assets/images/jabroni.jpg";
-import Bozo from "../assets/images/bozo.jpg";
+import Banner from '../assets/images/bannerImage.jpg';
+import Josh from "../assets/images/josh.JPEG";
 import Logo from "../assets/images/moveit3.jpeg";
 import Sections from '../components/Sections';
 
@@ -39,17 +37,11 @@ export default function HomePage() {
                     content={
                         <>
                             <p className="style2"> {/* Adjust the font size and remove border. */}
-                            A sports coaching company based in North Kingston with the aim to install a love of sport 
-                            and physical activity in all children to encourage lifelong participation through running, 
-                            dodging, tagging and ball games. 
+                            We are a sports coaching company based in North Kingston. Our mission is to instill a passion for sports and 
+                            physical activity in children while promoting lifelong participation in exercise through engaging activities 
+                            like running, dodging, tagging, and ball games.
                             </p>
-                            <ul className="actions">
-                                <li>
-                                <Link to='bookings'>
-                                    <Button name="Bookings" buttonStyle="button style3 large" />
-                                </Link>
-                                </li>
-                            </ul>
+                            
                         </>
                     }
                      />
@@ -64,61 +56,53 @@ export default function HomePage() {
                         //Update with only 3 features. Birthday parties - Dogdeball club with Multiskills Camp above or below.
                         <>
                         <div className="image featured">
-                            <img src={Team} alt="" />
+                            <img src={Banner} alt="" style={{ borderRadius: '5px' }} />
                         </div>
                         <section id="features">
                                 <header className="style1">
-                                    <p>We have a team of 5 dedicated coaches on hand to provide the following classess</p>
+                                    <p>We have a team of dedicated coaches on hand to provide the following classess</p>
                                 </header>
                                 <div className="feature-list">
                                     <div className="row">
-                                        <div className="col-6 col-12-medium">
+                                        <div className="col-12 col-12-medium">
                                             <section>
                                                 <h3 className="icon fa-comment">Multi-skills Camp</h3>
-                                                <p>Fun games and activities to develop fundamental movement skills and encouragelifelong involvement in sport.</p>
+                                                <p>Enjoy a variety of engaging games and activities designed to develop essential 
+                                                movement skills and foster a lifelong passion for sports.</p>
                                             </section>
-                                        </div>
+                                        </div><br/>
                                         <div className="col-6 col-12-medium">
                                             <section>
                                                 <h3 className="icon solid fa-sync">Dodgeball Club</h3>
-                                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+                                                <p>
+                                                Join us for our Dodgeball Club, held every Monday evening during term time at Latchmere School Sports Hall from 17:00 to 17:45.
+                                                <br/><br/>
+                                                Experience the thrill of dodgeball through exciting games and activities that promote physical literacy by enhancing skills such as running, jumping, throwing, catching, and dodging.
+                                                <br/><br/>
+                                                Open to children from Year 3 to Year 6.
+                                                </p>
                                             </section>
                                         </div>
                                         <div className="col-6 col-12-medium">
                                             <section>
                                                 <h3 className="icon fa-image">Birthday Parties</h3>
-                                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
+                                                <p>
+                                                
+                                                We understand that each child is different, so we tailor our birthday parties to suit their specific interests and preferences.
+                                                <br/><br/>
+                                                The most popular party options we receive are either sport-specific parties or multi-skills parties. Our sport-specific parties focus on a particular sport, while our multi-skills parties incorporate a variety of activities such as running, tagging, dodging, and ball games.
+                                                <br/><br/>
+                                                Contact us today to discuss how we can create an unforgettable birthday experience for your child.
+                                                </p>
                                             </section>
                                         </div>
-                                        <div className="col-6 col-12-medium">
-                                            <section>
-                                                <h3 className="icon solid fa-cog">Tempus sed pretium orci</h3>
-                                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-                                            </section>
-                                        </div>
-                                        <div className="col-6 col-12-medium">
-                                            <section>
-                                                <h3 className="icon solid fa-wrench">Aliquam consequat et feugiat</h3>
-                                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-                                            </section>
-                                        </div>
-                                        <div className="col-6 col-12-medium">
-                                            <section>
-                                                <h3 className="icon solid fa-check">Dolore laoreet aliquam mattis</h3>
-                                                <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate et magna feugiat laoreet vel velit lorem.</p>
-                                            </section>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <ul className="actions special">
                                 <li>
-                                    <Link to="/get started">
-                                        <Button name="Get Started" buttonStyle="button style1 large" />
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/more info">
-                                        <Button name="More Info" buttonStyle="button style2 large" />
+                                    <Link to="bookings">
+                                        <Button name="Bookings" buttonStyle="button style1 large" />
                                     </Link>
                                 </li>
                             </ul>
@@ -127,36 +111,29 @@ export default function HomePage() {
                     }
                 />
             
-                {/* Meet the Team */}
+                {/* Meet the Coach */}
                 <Sections 
                     sectionId={'highlights'}
                     sectionClassName={'wrapper style3'}
                     divClassName={'title'}
-                    sectionHeader={'Meet the team'}
+                    sectionHeader={'Meet the coach'}
                     content={
                         <div className="row aln-center">
                             <div className="col-4 col-12-medium">
 
                                 <Card 
                                     image={Josh} 
-                                    teamMember="Josh - Head Coach" 
-                                    description="Josh is the head coach of Move it! Sports Coaching. He is the PE teacher....." 
+                                    teamMember="Josh - Lead Coach" 
+                                    description=<p>Joshua Ayres, lead coach and founder of Move it Sports Coaching.
+                                    <br/><br/>
+                                    "I started Move it Sports Coaching over six years ago, previously under a different name, 
+                                    with the single vision to encourage lifelong participation in sport and physical activity for 
+                                    all children".
+                                    <br/><br/>
+                                    Coach Josh has over 15 years’ coaching experience and is a qualified primary school teacher 
+                                    with a degree in Physical Education, Sport and Activity.</p>  
                                 />
 
-                            </div>
-                            <div className="col-4 col-12-medium">
-                                <Card 
-                                    image={Jabroni} 
-                                    teamMember="Jabroni - Coach" 
-                                    description="Jabroni has been a coach for almost 3 years and currently works with children...." 
-                                />
-                            </div>
-                            <div className="col-4 col-12-medium">
-                                <Card 
-                                    image={Bozo} 
-                                    teamMember="Bozo - Coach" 
-                                    description="Bozo has been a coach for almost 3 years and currently works with children...." 
-                                />
                             </div>
                         </div>
                     }
@@ -171,10 +148,9 @@ export default function HomePage() {
                     content={
                     <>
                         <header className="style1">
-                            <h2>Ipsum sapien elementum portitor?</h2>
+                            <h2>Want to get in touch?</h2>
                             <p>
-                                Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
-                                Nam pharetra laoreet imperdiet volutpat etiam feugiat.
+                                Please fill out the form below or email us at info.placeholder@gmail.com.
                             </p>
                         </header>
                         <div className="row">

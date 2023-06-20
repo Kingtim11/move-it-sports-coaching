@@ -10,7 +10,6 @@ export default function Bookings() {
                 height="860px"
                 loading="lazy" 
                 title= "A booking form for Joshua Ayres Sports Coaching"
-                scrolling="no"
                 ></iframe>  
     );  
 }

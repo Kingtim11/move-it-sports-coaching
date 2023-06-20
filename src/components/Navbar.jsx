@@ -29,6 +29,8 @@ export default function Navbar() {
             document.body.setAttribute('id', 'nav-menu');
           }
     }
+
+    const navMenuClassName = isNavExpanded ? 'nav-menu expanded' : 'nav-menu';
     
     return (
             <nav className='navigation'>   
@@ -38,9 +40,7 @@ export default function Navbar() {
                     </button>
                 </div>
                     
-                    <div className={
-                        isNavExpanded ? 'nav-menu expanded' : 'nav-menu'
-                    }>
+                    <div className={navMenuClassName}>
                     <ul>
                         <li className="current"><Link to="/" onClick={handleClick}>Home</Link></li>
                         <li><Link to="/" onClick={handleClick}>What we Offer</Link></li>
