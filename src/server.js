@@ -6,7 +6,6 @@ const { google } = require('googleapis');
 const OAuth2 = google.auth.OAuth2;
 
 const app = express();
-const port = 8080
 // Enable CORS
 app.use(cors());
 app.use(express.json());
@@ -55,6 +54,6 @@ app.post('/send-email', (req, res) => {
   
   app.get('/', (req,res) => { res.send(`Server is running.`) })
 // Start the server
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Server is running on port ${process.env.PORT}`);
 });
