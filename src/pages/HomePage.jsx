@@ -59,7 +59,6 @@ export default function HomePage() {
                     content={
                         //Update with only 3 features. Birthday parties - Dogdeball club with Multiskills Camp above or below.
                         <>
-                        
                         <section id="features">
                             <header className="style1">
                                 <p>We have a team of dedicated coaches on hand to provide the following classess</p>
@@ -179,7 +178,7 @@ export default function HomePage() {
                                             <section>
                                                 <h3 className="icon solid fa-envelope">Email</h3>
                                                 <p>
-                                                    <Link to="mailto:enquiries@moveitsportscoaching.co.uk">enquiries@moveitsportscoaching.co.uk</Link>
+                                                    <Link style={{textDecoration: 'underline'}} to="mailto:enquiries@moveitsportscoaching.co.uk">enquiries@moveitsportscoaching.co.uk</Link>
                                                 </p>
                                             </section>
                                         </div>
@@ -188,7 +187,7 @@ export default function HomePage() {
                                                 <h3 className="icon solid fa-comment">Social</h3>
                                                 <p>
                                                 
-                                                    <Link to="/">instagram.com/untitled</Link>
+                                                    <Link style={{textDecoration: 'underline'}} to="/">instagram.com/untitled</Link>
                                                     
                                                 </p>
                                             </section>
@@ -203,7 +202,7 @@ export default function HomePage() {
                         </div>
                         <div id="copyright">
                             <ul>
-                                <li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                <li>&copy;Move it! Sports Coaching</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Web Development: <a href="">Tim King</a></li>
                             </ul>
                         </div>
                     </>

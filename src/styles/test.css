@@ -120,7 +120,7 @@ input, select, textarea {
 		-webkit-transition: color .25s ease-in-out;
 		-ms-transition: color .25s ease-in-out;
 		transition: color .25s ease-in-out;
-		text-decoration: underline;
+		text-decoration: none;
 		color: #717479;
 	}
 
@@ -2956,8 +2956,8 @@ input, select, textarea {
 		/* Feature List */
 
 			.feature-list section {
-				padding-top: 2em;
-				padding-left: 4em;
+				padding: 2em 1em;
+				
 			}
 
 			.feature-list h3:before {
