@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Navbar.css';
@@ -46,7 +47,14 @@ export default function Navbar() {
                         <li><Link to="/what-we-offer" onClick={handleClick}>What we Offer</Link></li>
                         <li><Link to="/meet-the-team" onClick={handleClick}>Meet the team</Link></li>
                         <li><Link to="/bookings" onClick={handleClick}>Bookings</Link></li>
-                        <li><Link to="/" onClick={handleClick}>Contact</Link></li>
+                        <li>
+                            <HashLink 
+                                smooth to="/#contact" 
+                                scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} 
+                                onClick={handleClick}>
+                                Contact
+                            </HashLink>
+                        </li>
                     </ul>
                 </div>
             </nav>

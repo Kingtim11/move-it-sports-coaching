@@ -41,6 +41,10 @@ export default function HomePage() {
                             physical activity in children while promoting lifelong participation in exercise through engaging activities 
                             like running, dodging, tagging, and ball games.
                             </p>
+
+                            <div className="image featured">
+                            <img src={Banner} alt="" style={{ borderRadius: '5px' }} />
+                        </div>
                             
                         </>
                     }
@@ -55,9 +59,7 @@ export default function HomePage() {
                     content={
                         //Update with only 3 features. Birthday parties - Dogdeball club with Multiskills Camp above or below.
                         <>
-                        <div className="image featured">
-                            <img src={Banner} alt="" style={{ borderRadius: '5px' }} />
-                        </div>
+                        
                         <section id="features">
                             <header className="style1">
                                 <p>We have a team of dedicated coaches on hand to provide the following classess</p>
@@ -155,7 +157,7 @@ export default function HomePage() {
                     sectionHeader={'Contact'}
                     content={
                     <>
-                        <header className="style1">
+                        <header className="style1" id='contact'>
                             <h2>Want to get in touch?</h2>
                             <p>
                                 Please fill out the form below or email us at enquiries@moveitsportscoaching.co.uk.
@@ -177,7 +179,7 @@ export default function HomePage() {
                                             <section>
                                                 <h3 className="icon solid fa-envelope">Email</h3>
                                                 <p>
-                                                    <Link to="/">enquiries@moveitsportscoaching.co.uk</Link>
+                                                    <Link to="mailto:enquiries@moveitsportscoaching.co.uk">enquiries@moveitsportscoaching.co.uk</Link>
                                                 </p>
                                             </section>
                                         </div>
@@ -185,7 +187,7 @@ export default function HomePage() {
                                             <section>
                                                 <h3 className="icon solid fa-comment">Social</h3>
                                                 <p>
-                                                    
+                                                
                                                     <Link to="/">instagram.com/untitled</Link>
                                                     
                                                 </p>
