@@ -43,8 +43,8 @@ export default function Navbar() {
                     <div className={navMenuClassName}>
                     <ul>
                         <li className="current"><Link to="/" onClick={handleClick}>Home</Link></li>
-                        <li><Link to="/" onClick={handleClick}>What we Offer</Link></li>
-                        <li><Link to="/" onClick={handleClick}>Meet the team</Link></li>
+                        <li><Link to="/what-we-offer" onClick={handleClick}>What we Offer</Link></li>
+                        <li><Link to="/meet-the-team" onClick={handleClick}>Meet the team</Link></li>
                         <li><Link to="/bookings" onClick={handleClick}>Bookings</Link></li>
                         <li><Link to="/" onClick={handleClick}>Contact</Link></li>
                     </ul>

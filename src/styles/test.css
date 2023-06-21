@@ -3121,8 +3121,12 @@ input, select, textarea {
 	}
 	.submitAlert--active {
 		display: block;
+		padding-top: 35px;
 	}
 	.contactForm--active {
 		display: none;
+	}
+	.emailSent {
+		font-size: larger;
 	}
 	

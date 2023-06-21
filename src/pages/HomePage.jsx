@@ -23,7 +23,7 @@ export default function HomePage() {
                     content={
                         //Logo
                         <div className={"container-logo"}>
-                            <img className="logo" src={Logo} alt="The logo for Move it! Sports Coaching. Children playing."/>
+                            <img className="logo" src={Logo} alt="The logo for Move it! Sports Coaching. Children playing different sports."/>
                         </div>
                     }
                 />
@@ -59,47 +59,46 @@ export default function HomePage() {
                             <img src={Banner} alt="" style={{ borderRadius: '5px' }} />
                         </div>
                         <section id="features">
-                                <header className="style1">
-                                    <p>We have a team of dedicated coaches on hand to provide the following classess</p>
-                                </header>
-                                <div className="feature-list">
-                                    <div className="row">
-                                        <div className="col-12 col-12-medium">
-                                            <section>
-                                                <h3 className="icon fa-comment">Multi-skills Camp</h3>
-                                                <p>Enjoy a variety of engaging games and activities designed to develop essential 
-                                                movement skills and foster a lifelong passion for sports.</p>
-                                            </section>
-                                        </div><br/>
-                                        <div className="col-6 col-12-medium">
-                                            <section>
-                                                <h3 className="icon solid fa-sync">Dodgeball Club</h3>
-                                                <p>
-                                                Join us for our Dodgeball Club, held every Monday evening during term time at Latchmere School Sports Hall from 17:00 to 17:45.
-                                                <br/><br/>
-                                                Experience the thrill of dodgeball through exciting games and activities that promote physical literacy by enhancing skills such as running, jumping, throwing, catching, and dodging.
-                                                <br/><br/>
-                                                Open to children from Year 3 to Year 6.
-                                                </p>
-                                            </section>
-                                        </div>
-                                        <div className="col-6 col-12-medium">
-                                            <section>
-                                                <h3 className="icon fa-image">Birthday Parties</h3>
-                                                <p>
-                                                
-                                                We understand that each child is different, so we tailor our birthday parties to suit their specific interests and preferences.
-                                                <br/><br/>
-                                                The most popular party options we receive are either sport-specific parties or multi-skills parties. Our sport-specific parties focus on a particular sport, while our multi-skills parties incorporate a variety of activities such as running, tagging, dodging, and ball games.
-                                                <br/><br/>
-                                                Contact us today to discuss how we can create an unforgettable birthday experience for your child.
-                                                </p>
-                                            </section>
-                                        </div>
-                                        
+                            <header className="style1">
+                                <p>We have a team of dedicated coaches on hand to provide the following classess</p>
+                            </header>
+                            <div className="feature-list">
+                                <div className="row">
+                                    <div className="col-12 col-12-medium">
+                                        <section>
+                                            <h3 className="icon fa-comment">Multi-skills Camp</h3>
+                                            <p>Enjoy a variety of engaging games and activities designed to develop essential 
+                                            movement skills and foster a lifelong passion for sports.</p>
+                                        </section>
+                                    </div><br/>
+                                    <div className="col-6 col-12-medium">
+                                        <section>
+                                            <h3 className="icon solid fa-sync">Dodgeball Club</h3>
+                                            <p>
+                                            Join us for our Dodgeball Club, held every Monday evening during term time at Latchmere School Sports Hall from 17:00 to 17:45.
+                                            <br/><br/>
+                                            Experience the thrill of dodgeball through exciting games and activities that promote physical literacy by enhancing skills such as running, jumping, throwing, catching, and dodging.
+                                            <br/><br/>
+                                            Open to children from Year 3 to Year 6.
+                                            </p>
+                                        </section>
+                                    </div>
+                                    <div className="col-6 col-12-medium">
+                                        <section>
+                                            <h3 className="icon fa-image">Birthday Parties</h3>
+                                            <p>
+                                            
+                                            We understand that each child is different, so we tailor our birthday parties to suit their specific interests and preferences.
+                                            <br/><br/>
+                                            The most popular party options we receive are either sport-specific parties or multi-skills parties. Our sport-specific parties focus on a particular sport, while our multi-skills parties incorporate a variety of activities such as running, tagging, dodging, and ball games.
+                                            <br/><br/>
+                                            Contact us today to discuss how we can create an unforgettable birthday experience for your child.
+                                            </p>
+                                        </section>
                                     </div>
                                 </div>
-                                <ul className="actions special">
+                            </div>
+                            <ul className="actions special">
                                 <li>
                                     <Link to="bookings">
                                         <Button name="Bookings" buttonStyle="button style1 large" />
@@ -118,6 +117,7 @@ export default function HomePage() {
                     divClassName={'title'}
                     sectionHeader={'Meet the coach'}
                     content={
+                        <>
                         <div className="row aln-center">
                             <div className="col-4 col-12-medium">
 
@@ -136,6 +136,14 @@ export default function HomePage() {
 
                             </div>
                         </div>
+                        <ul className="actions">
+                            <li>
+                                <Link to="/meet-the-team">
+                                    <Button name="Learn More" buttonStyle="button style1" />
+                                </Link>
+                            </li>
+                        </ul>
+                        </>
                     }
                 />
                 
@@ -150,7 +158,7 @@ export default function HomePage() {
                         <header className="style1">
                             <h2>Want to get in touch?</h2>
                             <p>
-                                Please fill out the form below or email us at info.placeholder@gmail.com.
+                                Please fill out the form below or email us at enquiries@moveitsportscoaching.co.uk.
                             </p>
                         </header>
                         <div className="row">
@@ -169,7 +177,7 @@ export default function HomePage() {
                                             <section>
                                                 <h3 className="icon solid fa-envelope">Email</h3>
                                                 <p>
-                                                    <Link to="/">info@untitled.tld</Link>
+                                                    <Link to="/">enquiries@moveitsportscoaching.co.uk</Link>
                                                 </p>
                                             </section>
                                         </div>
@@ -177,9 +185,9 @@ export default function HomePage() {
                                             <section>
                                                 <h3 className="icon solid fa-comment">Social</h3>
                                                 <p>
-                                                    <Link to="/">@untitled-corp</Link><br />
-                                                    <Link to="/">linkedin.com/untitled</Link><br />
-                                                    <Link to="/">facebook.com/untitled</Link>
+                                                    
+                                                    <Link to="/">instagram.com/untitled</Link>
+                                                    
                                                 </p>
                                             </section>
                                         </div>

@@ -94,13 +94,11 @@ export default function ContactForm() {
                                 <li><Button type="reset" name="Reset" buttonStyle="style2" /></li>
                             </ul>
                         </div>
-
-                        
-
                     </div>
                 </section>
+                
                 <div className={submitAlertClass}>
-                    <h1>Thank You! Your message has been sent.</h1>
+                    <h1 className="emailSent">Thank You! Your message has been sent.</h1>
                 </div>
 
             </form>
