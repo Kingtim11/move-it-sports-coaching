@@ -23,7 +23,7 @@ export default function ContactForm() {
         const formData = new FormData(form);
         const formJson = Object.fromEntries(formData.entries());
       
-        fetch('http://localhost:8080/send-email', {
+        fetch('https://move-it-sports-coaching-api.onrender.com/send-email', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
