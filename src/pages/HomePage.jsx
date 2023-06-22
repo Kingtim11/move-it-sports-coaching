@@ -8,6 +8,8 @@ import Banner from '../assets/images/bannerImage.jpg';
 import Josh from "../assets/images/josh.JPEG";
 import Logo from "../assets/images/moveit3.jpeg";
 import Sections from '../components/Sections';
+import InstagramGlyphColor from '../assets/icons/Instagram_Glyph_Gradient.png';
+import InstagramGlyphWhite from '../assets/icons/Instagram_Glyph_White.png';
 
 export default function HomePage() {
     return (
@@ -124,14 +126,17 @@ export default function HomePage() {
                                 <Card 
                                     image={Josh} 
                                     teamMember="Josh - Lead Coach" 
-                                    description=<p>Joshua Ayres, lead coach and founder of Move it Sports Coaching.
+                                    description=
+                                    <p>
+                                    Joshua Ayres, lead coach and founder of Move it Sports Coaching.
                                     <br/><br/>
                                     "I started Move it Sports Coaching over six years ago, previously under a different name, 
                                     with the single vision to encourage lifelong participation in sport and physical activity for 
                                     all children".
                                     <br/><br/>
                                     Coach Josh has over 15 years’ coaching experience and is a qualified primary school teacher 
-                                    with a degree in Physical Education, Sport and Activity.</p>  
+                                    with a degree in Physical Education, Sport and Activity.
+                                    </p>  
                                 />
 
                             </div>
@@ -177,18 +182,22 @@ export default function HomePage() {
                                             <section>
                                                 <h3 className="icon solid fa-envelope">Email</h3>
                                                 <p>
-                                                    <Link style={{textDecoration: 'underline'}} to="mailto:enquiries@moveitsportscoaching.co.uk">enquiries@moveitsportscoaching.co.uk</Link>
+                                                    <Link className='link-style2' to="mailto:enquiries@moveitsportscoaching.co.uk">enquiries@moveitsportscoaching.co.uk</Link>
                                                 </p>
                                             </section>
                                         </div>
                                         <div className="col-6 col-12-small">
                                             <section>
                                                 <h3 className="icon solid fa-comment">Social</h3>
-                                                <p>
-                                                
-                                                    <Link style={{textDecoration: 'underline'}} to="/">instagram.com/untitled</Link>
-                                                    
+                                                <p> 
+                                                    <Link className='link-style2' to="/">instagram.com/untitled</Link>  
                                                 </p>
+                                                <Link to='/'>
+                                                    <img src={InstagramGlyphColor} style={{width: '20px', height: 'auto'}}  alt=''></img><p style={{color: 'white'}}>Follow us on Instagram</p>
+                                                </Link>
+                                                <Link to='/'>
+                                                    <img src={InstagramGlyphWhite} style={{width: '20px', height: 'auto'}} alt=''></img><p style={{color: 'white'}}>Follow us on Instagram</p>
+                                                </Link>
                                             </section>
                                         </div>
                                         <div className="col-6 col-12-small">
