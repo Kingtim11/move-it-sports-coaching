@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import Button from './Button';
 
-
-//Set up a server using Node/Express and nodemailer?
-
 export default function ContactForm() {
-    //Add a "Thank you, for your enquiry" message underneath the "Send" button instead of an alert. Use onClick to show a hidden message.
     const [isEmailSubmitted, setIsEmailSubmitted] = useState(false);
 
     let contactFormClass = 'contactForm';
@@ -15,7 +11,7 @@ export default function ContactForm() {
         contactFormClass += ' contactForm--active'
     }
 
-    //Backend service using nodemailer/express.
+    //HandleSubmit and POST to the server.
     function handleSubmit(e) {
         e.preventDefault();
 
@@ -48,7 +44,6 @@ export default function ContactForm() {
         setIsEmailSubmitted(!isEmailSubmitted);
       }
        
-
     return (
         <section>
             <form onSubmit={handleSubmit}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/test.css';
+import '../styles/main.css';
 import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import Card from '../components/Card';
@@ -8,8 +8,6 @@ import Banner from '../assets/images/bannerImage.jpg';
 import Josh from "../assets/images/josh.JPEG";
 import Logo from "../assets/images/moveit3.jpeg";
 import Sections from '../components/Sections';
-
-
 
 export default function HomePage() {
     return (
@@ -67,14 +65,16 @@ export default function HomePage() {
                                 <div className="row">
                                     <div className="col-12 col-12-medium">
                                         <section>
-                                            <h3 className="icon fa-comment">Multi-skills Camp</h3>
-                                            <p>Enjoy a variety of engaging games and activities designed to develop essential 
-                                            movement skills and foster a lifelong passion for sports.</p>
+                                            <Link className='link-style1' to='/what-we-offer'><h3 className="icon fa-comment">Multi-skills Camp</h3></Link>
+                                            <p>
+                                            Enjoy a variety of engaging games and activities designed to develop essential 
+                                            movement skills and foster a lifelong passion for sports.
+                                            </p>
                                         </section>
                                     </div><br/>
                                     <div className="col-6 col-12-medium">
                                         <section>
-                                            <h3 className="icon solid fa-sync">Dodgeball Club</h3>
+                                        <Link className='link-style1' to='/what-we-offer'><h3 className="icon solid fa-sync">Dodgeball Club</h3></Link>
                                             <p>
                                             Join us for our Dodgeball Club, held every Monday evening during term time at Latchmere School Sports Hall from 17:00 to 17:45.
                                             <br/><br/>
@@ -86,9 +86,8 @@ export default function HomePage() {
                                     </div>
                                     <div className="col-6 col-12-medium">
                                         <section>
-                                            <h3 className="icon fa-image">Birthday Parties</h3>
+                                        <Link className='link-style1' to='/what-we-offer'><h3 className="icon fa-image">Birthday Parties</h3></Link>
                                             <p>
-                                            
                                             We understand that each child is different, so we tailor our birthday parties to suit their specific interests and preferences.
                                             <br/><br/>
                                             The most popular party options we receive are either sport-specific parties or multi-skills parties. Our sport-specific parties focus on a particular sport, while our multi-skills parties incorporate a variety of activities such as running, tagging, dodging, and ball games.
@@ -202,7 +201,7 @@ export default function HomePage() {
                         </div>
                         <div id="copyright">
                             <ul>
-                                <li>&copy;Move it! Sports Coaching</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Web Development: <a href="">Tim King</a></li>
+                                <li>&copy;Move it! Sports Coaching</li><li>Design: <Link className='link-style2' to="http://html5up.net">HTML5 UP</Link></li><li>Web Development: <Link className='link-style2' href="https://timking.netlify.app/">Tim King</Link></li>
                             </ul>
                         </div>
                     </>
