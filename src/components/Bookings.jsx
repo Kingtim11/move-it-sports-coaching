@@ -4,7 +4,6 @@ export default function Bookings() {
 
   return (
     <div>
-      <button>Go Back</button>
       <iframe
         id="Iframe"
         src="https://joshua-ayres-sports-coaching.class4kids.co.uk"
