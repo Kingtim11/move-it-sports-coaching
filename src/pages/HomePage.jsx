@@ -10,6 +10,7 @@ import Logo from "../assets/images/moveit3.jpeg";
 import Sections from '../components/Sections';
 import InstagramGlyphColor from '../assets/icons/Instagram_Glyph_Gradient.png';
 import InstagramGlyphWhite from '../assets/icons/Instagram_Glyph_White.png';
+import { FaInstagram } from 'react-icons/fa';
 
 export default function HomePage() {
     return (
@@ -45,7 +46,6 @@ export default function HomePage() {
                             <div className="image featured">
                             <img src={Banner} alt="" style={{ borderRadius: '5px' }} />
                         </div>
-                            
                         </>
                     }
                      />
@@ -190,18 +190,22 @@ export default function HomePage() {
                                             <section>
                                                 <h3 className="icon solid fa-comment">Social</h3>
                                                 <p> 
-                                                    <Link className='link-style2' to="/">instagram.com/untitled</Link>  
+                                                <a className="link-style2" href="https://www.instagram.com/untitled" target="_blank" rel="noopener noreferrer">instagram.com/untitled</a>
                                                 </p>
-                                                <Link to='/'>
-                                                    <img src={InstagramGlyphColor} style={{width: '20px', height: 'auto'}}  alt=''></img><p style={{color: 'white'}}>Follow us on Instagram</p>
-                                                </Link>
-                                                <Link to='/'>
-                                                    <img src={InstagramGlyphWhite} style={{width: '20px', height: 'auto'}} alt=''></img><p style={{color: 'white'}}>Follow us on Instagram</p>
-                                                </Link>
+                                                
+                                                <a href="https://www.instagram.com/untitled" target="_blank" rel="noopener noreferrer">
+                                                <FaInstagram size={20} color="currentColor" />
+                                                    <p style={{color: 'white'}}>Follow us on Instagram</p>
+                                                </a>
+                                                {/*<Link to='/'>
+                                                    <img src={InstagramGlyphWhite} style={{width: '20px', height: 'auto'}} alt='' /><p style={{color: 'white'}}>Follow us on Instagram</p>
+                                                    
+                                                </Link>*/}
+                                                
                                             </section>
                                         </div>
                                         <div className="col-6 col-12-small">
-                                            
+                                        
                                         </div>
                                         
                                     </div>

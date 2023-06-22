@@ -2012,13 +2012,13 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: rgba(80, 181, 85, 1) url("../assets/images/overlay.png");
+			background: #00d24b url("../assets/images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: rgba(80, 181, 85, 1) url("../assets/images/overlay.png");
+				background: #00d24b url("../assets/images/overlay.png");
 				color: #fff;
 			}
 
