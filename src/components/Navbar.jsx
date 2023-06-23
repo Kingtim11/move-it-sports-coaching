@@ -34,6 +34,7 @@ export default function Navbar() {
     const navMenuClassName = isNavExpanded ? 'nav-menu expanded' : 'nav-menu';
     
     return (
+        <>
             <nav className='navigation'>   
                 <div className='nav-button-container'>
                     <button className='nav-icon' onClick={handleClick}>
@@ -58,5 +59,6 @@ export default function Navbar() {
                     </ul>
                 </div>
             </nav>
+        </>
     );
 }
