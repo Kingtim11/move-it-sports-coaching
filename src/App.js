@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../src/pages/HomePage';
 import Navbar from '../src/components/Navbar';
 import BookingPage from '../src/pages/BookingPage';
@@ -10,7 +10,7 @@ import ScrollToTop from './components/ScrollToTop';
 export default function App() {
   return (
     <div className="App">
-      
+      <BrowserRouter>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -19,7 +19,7 @@ export default function App() {
           <Route path="/bookings" element={<BookingPage />} />
         </Routes>
         <Navbar />
-      
+      </BrowserRouter>
     </div>
   );
 }
