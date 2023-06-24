@@ -19,6 +19,8 @@ const router = createBrowserRouter(
   )
 )
 
+// https://www.pluralsight.com/guides/handling-react-routing-in-production
+
 export default function App() {
   return (
     
