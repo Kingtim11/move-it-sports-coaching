@@ -6,11 +6,12 @@ import BookingPage from '../src/pages/BookingPage';
 import WhatWeOfferPage from './pages/WhatWeOfferPage';
 import MeetTheTeamPage from './pages/MeetTheTeamPage';
 import ScrollToTop from './components/ScrollToTop';
+import RootLayout from './layouts/RootLayout';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route>
-      <Route path="/" element={<Home />} />
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<Home />} />
       <Route path="/what-we-offer" element={<WhatWeOfferPage />} />
       <Route path="/meet-the-team" element={<MeetTheTeamPage />} />
       <Route path="/bookings" element={<BookingPage />} />
