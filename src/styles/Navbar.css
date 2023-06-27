@@ -7,7 +7,7 @@
     font: inherit;
     position: absolute;
     display: block;
-    top: 2.5em;
+    top: 0.5rem;
 	left: 0;
 	width: 100%;
     text-align: center;
@@ -58,76 +58,77 @@
                                 @media screen and (min-width: 736px) {
                                     .nav-button-container {
                                         display: none;
-                                        
                                     }
                                 }                     
                                 
-                                @media screen and (max-width: 736px) {
-                                    /*Set the nav menu when the screen size is smaller than 736px*/ 
-                                    
-                                    .nav-menu.expanded ul {
-                                        display: flex;
-                                        position: fixed;
-                                        transform: translateX(0);
-                                        
-                                    }
-                                    .nav-menu ul {
-                                        position: fixed;
-                                        display: flex;
-                                        flex-direction: column;
-                                        width: 275px;
-                                        transform: translateX(-275px);
-                                        height: 100%;
-                                        background-color: #2e99d6;
-                                        color: #eee;
-                                        transition: all 0.5s ease;
-                                        overflow-y: auto;
-                                        top: 0;
-                                        z-index: 10002;
-                                        box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
-                                    }
-                                    .nav-menu > ul > li > a{
-                                        color: #eee;
-                                    }
-                                    .nav-menu > ul > li:hover > a {
-                                        color: #eee;
-                                        transform: scale(1.5);
-                                    }
-                                        .nav-menu > ul > li.active > a, .nav-menu > ul > li.active > span {
-                                            color: #eee;
-                                        }
-                                
-                                    /*Button icon for the small screen nav menu*/ 
-                                    .nav-button-container {
-                                        display: flex;
-                                        position: absolute;
-                                        top: -2em;
-                                        left: 0.5em;
-                                    }
-                                        .nav-icon {
-                                            display: flex;
-                                            position: relative;
-                                            align-items: center;
-                                            justify-content: center;
-                                            width: 1em;
-                                            border-radius: 0.35rem;
-                                            box-shadow: inset 0px 0px 1px 1px rgba(46,153,214, 0.9);
-                                            background-color: rgba(46,153,214, 0);
-                                            
-                                        }
-                                        .nav-icon:hover {
-                                            color: #2e99d6;
-                                            background-color: rgba(46,153,214, 0);
-                                            transform: scale(1.1);
-                                        }
-                                        #nav-menu {
-                                            transform: translateX(0);
-                                        }
-                                        #nav-expanded #page-wrapper {
-                                            /*transform: translateX(275px);*/
-                                            transition: all 1s ease;
-                                        }
-                                        #nav-expanded .nav-button-container {
-                                            transform: translateX(0);
-                                        }
-                                    }
+@media screen and (max-width: 736px) {
+/*Set the nav menu when the screen size is smaller than 736px*/
+    .navigation {
+        top: 0.1rem;
+    }
+
+    .nav-menu.expanded ul {
+        display: flex;
+        position: fixed;
+        transform: translateX(0);
+        
+    }
+    .nav-menu ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 275px;
+        transform: translateX(-275px);
+        height: 100%;
+        background-color: #2e99d6;
+        color: #eee;
+        transition: all 0.5s ease;
+        overflow-y: auto;
+        top: 0;
+        z-index: 10002;
+        box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);   
+    }
+    .nav-menu > ul > li > a{
+        color: #eee;
+    }
+    .nav-menu > ul > li:hover > a {
+        color: #eee;
+        transform: scale(1.5);
+    }
+        .nav-menu > ul > li.active > a, .nav-menu > ul > li.active > span {
+            color: #eee;
+        }
+
+    /*Button icon for the small screen nav menu*/ 
+    .nav-button-container {
+        display: flex;
+        position: absolute;
+        right: 0.1rem;
+    }
+        .nav-icon {
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            width: 1em;
+            border-radius: 0.35rem;
+            /*box-shadow: inset 0px 0px 1px 1px rgba(46,153,214, 0.9);*/
+            background-color: rgba(46,153,214, 0);
+            
+        }
+        .nav-icon:hover {
+            color: #2e99d6;
+            background-color: rgba(46,153,214, 0);
+            transform: scale(1.1);
+        }
+        #nav-menu {
+            transform: translateX(0);
+        }
+        #nav-expanded #page-wrapper {
+            /*transform: translateX(275px);*/
+            transition: all 1s ease;
+        }
+        #nav-expanded .nav-button-container {
+            transform: translateX(0);
+        }
+}

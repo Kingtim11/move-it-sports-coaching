@@ -38,7 +38,7 @@ export default function Navbar() {
             <nav className='navigation'>   
                 <div className='nav-button-container'>
                     <button className='nav-icon' onClick={handleClick}>
-                        <FontAwesomeIcon  icon={faBars} size='xl' color='#2e99d6' />
+                        <FontAwesomeIcon  icon={faBars} size='2xl' color='#2e99d6' />
                     </button>
                 </div>
                     
