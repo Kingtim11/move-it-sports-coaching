@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Main.css';
 
 export default function Timetable() {
   return (

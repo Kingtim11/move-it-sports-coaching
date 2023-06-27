@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Main.css';
+import '../styles/main.css';
 
 export default function Card({image, teamMember, description }) {
     return (
