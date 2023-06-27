@@ -40,7 +40,7 @@ export default function WhatWeOfferPage() {
                                             <br/><br/>
                                             To provide the best experience, children will be grouped with others of a similar age.
                                             <br/><br/>
-                                            Curious about our schedule? Check out an example timetable for Multi Skills Club here.
+                                            Curious about our schedule? Check out an example timetable for Multi Skills Club below!
                                             </p>
                                         </section>
                                         <Table />
