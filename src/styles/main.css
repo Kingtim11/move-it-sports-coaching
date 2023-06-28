@@ -3383,21 +3383,12 @@ input, select, textarea {
 		background-color: #f2f2f2;
 	  }
 	
-	  /*Contact form message*/
-	.submitAlert {
-		display: none;
-	}
+	/*Contact form message*/
 	.contactForm {
 		display: grid;
 	}
-	.submitAlert--active {
-		display: block;
-		padding-top: 35px;
-	}
-	.contactForm--active {
-		display: none;
-	}
 	.emailSent {
 		font-size: larger;
+		padding-top: 35px;
 	}
 	
