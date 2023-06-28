@@ -48,6 +48,7 @@ export default function Navbar() {
                         <li><Link to="/what-we-offer" onClick={handleClick}>What we Offer</Link></li>
                         <li><Link to="/meet-the-team" onClick={handleClick}>Meet the team</Link></li>
                         <li><Link to="/bookings" onClick={handleClick}>Bookings</Link></li>
+                        <li><Link to="https://joshua-ayres-sports-coaching.class4kids.co.uk" onClick={handleClick}>Bookings</Link></li>
                         <li>
                             <HashLink 
                                 smooth to="/#contact" 
