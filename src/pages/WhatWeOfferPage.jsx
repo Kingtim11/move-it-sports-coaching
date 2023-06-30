@@ -1,6 +1,6 @@
 import React from "react";
-import Sections from "../components/Sections";
 import { Link } from "react-router-dom";
+import Sections from "../components/Sections";
 import Button from "../components/Button";
 import Table from "../components/Table";
 
