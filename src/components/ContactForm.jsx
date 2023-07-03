@@ -90,7 +90,9 @@ export default function ContactForm() {
     } 
         return(
             <div>
-                <h1 className="emailSent">Thank You! Your message has been sent.</h1>
+                <h1 className="emailMessage">Thank You! Your message has been sent.</h1>
             </div>
         );
+
+        // Create an error message.....
 }
