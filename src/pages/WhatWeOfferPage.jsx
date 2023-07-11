@@ -25,28 +25,28 @@ export default function WhatWeOfferPage() {
                             <div className="feature-list">
                                 <div className="row">
                                     <div className="col-12 col-12-medium">
-                                        <section>
+                                        <section id="multi-skills">
                                             <h3 className="icon fa-comment">Multi-skills Camp</h3>
                                             <p>
-                                            Join us at Multi Skills Club, running every school holiday at Latchmere School in North Kingston!
-                                            <br/><br/>
-                                            Experience a day filled with exciting games and activities designed to develop fundamental movement skills and ignite a lifelong passion for sports. Our team of experienced coaches is dedicated to creating a fun-filled environment, making it their mission to ensure everyone has a blast!
-                                            <br/><br/>
-                                            In the mornings, children will engage in a variety of running, dodging, tagging, and ball games, aimed at enhancing their fundamental movement skills.
-                                            <br/><br/>
-                                            During the afternoons, the children take the lead, enjoying a wide range of sports games and activities of their choice.
-                                            <br/><br/>
-                                            Our state-of-the-art facilities include an outdoor sports pitch and a spacious indoor sports hall. Additionally, we offer a diverse selection of gymnastics equipment, available for daily use.
-                                            <br/><br/>
-                                            To provide the best experience, children will be grouped with others of a similar age.
-                                            <br/><br/>
-                                            Curious about our schedule? Check out an example timetable for Multi Skills Club below!
+                                            Runs every school holiday at Latchmere School in North Kingston.
+                                            <br /><br />
+                                            Fun games and activities to develop fundamental movement skills and encourage lifelong involvement in sport. Run by experienced coaches who are passionate about what they do and make it their mission to ensure everyone has a fun day.
+                                            <br /><br />
+                                            In the morning, the children will play a range of running, dodging, tagging and ball games to help develop fundamental movement skills. 
+                                            <br /><br />
+                                            The afternoons are child led and there will be an opportunity to play a wide range of sports games and activities. 
+                                            <br /><br />
+                                            Facilities include an outside sports pitch and a large indoor sports hall. A wide variety of gymnastics equipment is available which can be used daily.
+                                            <br /><br />
+                                            Children will be in groups with children of a similar age.
+                                            <br /><br />
+                                            An example timetable for Multi Skills Club can be found below. 
                                             </p>
                                         </section>
                                         <Table />
                                     </div><br/>
                                     <div className="col-6 col-12-medium">
-                                        <section>
+                                        <section id="dodgeball">
                                         <h3 className="icon solid fa-sync">Dodgeball Club</h3>
                                             <p>
                                             Join us for our Dodgeball Club, held every Monday evening during term time at Latchmere School Sports Hall from 17:00 to 17:45.
@@ -58,7 +58,7 @@ export default function WhatWeOfferPage() {
                                         </section>
                                     </div>
                                     <div className="col-6 col-12-medium">
-                                        <section>
+                                        <section id="birthday">
                                         <h3 className="icon fa-image">Birthday Parties</h3>
                                             <p>
                                             We understand that each child is different, so we tailor our birthday parties to suit their specific interests and preferences.

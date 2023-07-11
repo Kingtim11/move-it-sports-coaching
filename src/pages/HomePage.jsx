@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/main.css';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import ContactForm from '../components/ContactForm';
@@ -67,7 +68,7 @@ export default function HomePage() {
                                 <div className="row">
                                     <div className="col-12 col-12-medium">
                                         <section>
-                                            <Link className='link-style1' to='/what-we-offer'><h3 className="icon fa-comment">Multi-skills Camp</h3></Link>
+                                            <HashLink className='link-style1' to='/what-we-offer/#multi-skills'><h3 className="icon fa-comment">Multi-skills Camp</h3></HashLink>
                                             <p>
                                             Enjoy a variety of engaging games and activities designed to develop essential 
                                             movement skills and foster a lifelong passion for sports.
@@ -76,7 +77,7 @@ export default function HomePage() {
                                     </div><br/>
                                     <div className="col-6 col-12-medium">
                                         <section>
-                                        <Link className='link-style1' to='/what-we-offer'><h3 className="icon solid fa-sync">Dodgeball Club</h3></Link>
+                                        <HashLink className='link-style1' to='/what-we-offer/#dodgeball'><h3 className="icon solid fa-sync">Dodgeball Club</h3></HashLink>
                                             <p>
                                             Join us for our Dodgeball Club, held every Monday evening during term time at Latchmere School Sports Hall from 17:00 to 17:45.
                                             <br/><br/>
@@ -88,7 +89,7 @@ export default function HomePage() {
                                     </div>
                                     <div className="col-6 col-12-medium">
                                         <section>
-                                        <Link className='link-style1' to='/what-we-offer'><h3 className="icon fa-image">Birthday Parties</h3></Link>
+                                        <HashLink className='link-style1' to='/what-we-offer/#birthday'><h3 className="icon fa-image">Birthday Parties</h3></HashLink>
                                             <p>
                                             We understand that each child is different, so we tailor our birthday parties to suit their specific interests and preferences.
                                             <br/><br/>
@@ -112,12 +113,12 @@ export default function HomePage() {
                     }
                 />
             
-                {/* Meet the Coach */}
+                {/* Meet the Team */}
                 <Sections 
                     sectionId={'highlights'}
                     sectionClassName={'wrapper style3'}
                     divClassName={'title'}
-                    sectionHeader={'Meet the coach'}
+                    sectionHeader={'Meet the team'}
                     content={
                         <>
                         <div className="row aln-center">
