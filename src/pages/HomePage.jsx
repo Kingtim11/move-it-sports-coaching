@@ -6,7 +6,7 @@ import Button from '../components/Button';
 import Card from '../components/Card';
 import ContactForm from '../components/ContactForm';
 import Banner from '../assets/images/bannerImage.jpg';
-import Josh from "../assets/images/josh.jpeg";
+import Josh from "../assets/images/josh.JPEG";
 import Logo from "../assets/images/moveit3.jpeg";
 import Sections from '../components/Sections';
 import InstagramGlyphColor from '../assets/icons/Instagram_Glyph_Gradient.png';
