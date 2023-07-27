@@ -71,8 +71,8 @@
         display: flex;
         position: fixed;
         transform: translateX(0);
-        
     }
+
     .nav-menu ul {
         position: fixed;
         display: flex;

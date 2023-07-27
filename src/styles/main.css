@@ -3384,6 +3384,10 @@ input, select, textarea {
 	  .timetable th {
 		background-color: #f2f2f2;
 	  }
+	  .timetable p {
+		color: #2e99d6;
+		margin: 0;
+	  }
 	
 	/*Contact form message*/
 	.contactForm {

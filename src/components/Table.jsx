@@ -15,7 +15,7 @@ export default function Timetable() {
             <td>8:15 AM</td>
             <td colSpan={2}>
             Gates open for 'Extended Day'<br />
-            A wide range of sports equipment available for children to play with.
+            <p>A wide range of sports equipment available for children to play with.</p>
             </td>
         </tr>
 
@@ -23,7 +23,7 @@ export default function Timetable() {
             <td>8:45 AM - 9:15 AM</td>
             <td colSpan={2}>
                 Gates open for all<br />
-                Arrival games.
+                <p>Arrival games.</p>
             </td>
         </tr>
 
@@ -31,7 +31,7 @@ export default function Timetable() {
             <td>9:15 AM - 10:30 AM</td>
             <td colSpan={2}>
                 Session 1<br />
-                A range of running, tagging, dodging and ball games.
+                <p>A range of running, tagging, dodging and ball games.</p>
             </td>
         </tr>
 
@@ -46,7 +46,7 @@ export default function Timetable() {
             <td>10:50 AM - 12:00 PM</td>
             <td colSpan={2}>
                 Session 2<br />
-                A range of running, tagging, dodging and ball games.
+                <p>A range of running, tagging, dodging and ball games.</p>
             </td>
         </tr>
         
@@ -54,7 +54,7 @@ export default function Timetable() {
             <td>12:00 PM - 12:45 PM</td>
             <td colSpan={2}>
                 Lunch<br />
-                A wide range of sports equipment available for children to play with.
+                <p>A wide range of sports equipment available for children to play with.</p>
             </td>
         </tr>
 
@@ -68,17 +68,22 @@ export default function Timetable() {
             <td>1:00 PM - 1:45 PM</td>
             <td>
                 Session 3<br />
-                A range of running, tagging, dodging and ball games.
+                <p>A range of running, tagging, dodging and ball games.</p>
             </td>
-            <td>Gymnastics</td>
+            <td>
+                <p>Gymnastics</p>
+            </td>
         </tr>
 
         <tr>
             <td>1:45 PM - 2:45 PM</td>
-            <td>Gymnastics</td>
+            <td>
+                <p>Gymnastics</p>
+            </td>
+
             <td>
                 Session 3<br />
-                Child-led.
+                <p>Child-led.</p>
             </td>
         </tr>
 
@@ -93,7 +98,7 @@ export default function Timetable() {
             <td>2:45 PM - 3:45 PM</td>
             <td colSpan={2}>
                 Extended day only:<br />
-                A wide range of sports equipment available for children to play with.
+                <p>A wide range of sports equipment available for children to play with.</p>
             </td>
         </tr>
         
