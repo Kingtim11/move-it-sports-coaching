@@ -9,11 +9,10 @@ import Banner from '../assets/images/bannerImage.jpg';
 import Josh from "../assets/images/josh.JPEG";
 import Logo from "../assets/images/moveit3.jpeg";
 import Sections from '../components/Sections';
-import InstagramGlyphColor from '../assets/icons/Instagram_Glyph_Gradient.png';
-import InstagramGlyphWhite from '../assets/icons/Instagram_Glyph_White.png';
 import { FaInstagram } from 'react-icons/fa';
 
 export default function HomePage() {
+
     return (
         <div className='homepage is-preload'>
             <div id='page-wrapper'>
@@ -25,7 +24,7 @@ export default function HomePage() {
                     content={
                         //Logo
                         <div className={"container-logo"}>
-                            <img className="logo" src={Logo} alt="The logo for Move it! Sports Coaching. Children playing different sports."/>
+                            <img loading='lazy' className="logo" src={Logo} alt="The logo for Move it! Sports Coaching. Children playing different sports."/>
                         </div>
                     }
                 />
@@ -45,7 +44,7 @@ export default function HomePage() {
                             </p>
 
                             <div className="image featured">
-                            <img src={Banner} alt="" style={{ borderRadius: '5px' }} />
+                            <img loading='lazy' src={Banner} alt="" style={{ borderRadius: '5px' }} />
                         </div>
                         </>
                     }
@@ -127,17 +126,18 @@ export default function HomePage() {
                                 <Card 
                                     image={Josh} 
                                     teamMember="Josh - Lead Coach" 
-                                    description=
-                                    <p>
-                                    Joshua Ayres, lead coach and founder of Move it Sports Coaching.
-                                    <br/><br/>
-                                    "I started Move it Sports Coaching over six years ago, previously under a different name, 
-                                    with the single vision to encourage lifelong participation in sport and physical activity for 
-                                    all children".
-                                    <br/><br/>
-                                    Coach Josh has over 15 years’ coaching experience and is a qualified primary school teacher 
-                                    with a degree in Physical Education, Sport and Activity.
-                                    </p>  
+                                    description={
+                                    <>
+                                        Joshua Ayres, lead coach and founder of Move it Sports Coaching.
+                                        <br/><br/>
+                                        "I started Move it Sports Coaching over six years ago, previously under a different name, 
+                                        with the single vision to encourage lifelong participation in sport and physical activity for 
+                                        all children".
+                                        <br/><br/>
+                                        Coach Josh has over 15 years’ coaching experience and is a qualified primary school teacher 
+                                        with a degree in Physical Education, Sport and Activity.
+                                    </>
+                                    }
                                 />
 
                             </div>
@@ -161,7 +161,7 @@ export default function HomePage() {
                     sectionHeader={'Contact'}
                     content={
                     <>
-                        <header className="style1" id='contact'>
+                        <header id='contact' className="style1">
                             <h2>Want to get in touch?</h2>
                             <p>
                                 Please fill out the form below or email us at enquiries@moveitsportscoaching.co.uk.
@@ -190,11 +190,7 @@ export default function HomePage() {
                                         <div className="col-6 col-12-small">
                                             <section>
                                                 <h3 className="icon solid fa-comment">Social</h3>
-                                                <p> 
-                                                <a className="link-style2" href="https://www.instagram.com/untitled" target="_blank" rel="noopener noreferrer">instagram.com/untitled</a>
-                                                </p>
-                                                
-                                                <a href="https://www.instagram.com/untitled" target="_blank" rel="noopener noreferrer">
+                                                <a href="https://www.instagram.com/moveitsportscoaching/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" rel="noopener noreferrer">
                                                 <FaInstagram size={20} color="currentColor" />
                                                     <p style={{color: 'white'}}>Follow us on Instagram</p>
                                                 </a>

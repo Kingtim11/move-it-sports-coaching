@@ -52,7 +52,8 @@ export default function Navbar() {
                             <HashLink 
                                 smooth to="/#contact" 
                                 scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} 
-                                onClick={handleClick}>
+                                onClick={handleClick}
+                                >
                                 Contact
                             </HashLink>
                         </li>
