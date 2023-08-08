@@ -1625,7 +1625,7 @@ input, select, textarea {
 			}
 
 		.image.featured {
-			display: block;
+			display: flex;
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
@@ -2022,6 +2022,10 @@ input, select, textarea {
 			.wrapper.style1 .title {
 				background: #00d24b url("../assets/images/overlay.png");
 				color: #fff;
+			}
+
+			.wrapper.style1 .image {
+				border: solid 10px #fff;
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {

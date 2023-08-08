@@ -68,7 +68,7 @@ export default function Timetable() {
             <td>1:00 PM - 1:45 PM</td>
             <td>
                 Session 3<br />
-                <p>A range of running, tagging, dodging and ball games.</p>
+                <p>Child-led / A range of running, tagging, dodging and ball games.</p>
             </td>
             <td>
                 <p>Gymnastics</p>
@@ -83,7 +83,7 @@ export default function Timetable() {
 
             <td>
                 Session 3<br />
-                <p>Child-led.</p>
+                <p>Child-led / A range of running, tagging, dodging and ball games.</p>
             </td>
         </tr>
 
