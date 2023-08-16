@@ -10,6 +10,7 @@ import BookingPage from '../src/pages/BookingPage';
 import WhatWeOfferPage from './pages/WhatWeOfferPage';
 import MeetTheTeamPage from './pages/MeetTheTeamPage';
 import RootLayout from './layouts/RootLayout';
+import PreLoad from './components/PreLoad';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,8 +25,10 @@ const router = createBrowserRouter(
 
 export default function App() {
   return (
-
-    <RouterProvider router={router} />
+    <>
+      <RouterProvider router={router} />
+      <PreLoad />
+    </>
       
   );
 }

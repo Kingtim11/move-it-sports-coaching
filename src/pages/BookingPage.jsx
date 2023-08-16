@@ -34,7 +34,6 @@ export default function BookingPage() {
                     </React.Fragment>
                 ))
             }
-            
             </div>
         </div>
         

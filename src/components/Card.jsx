@@ -1,20 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../styles/main.css';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { Blurhash } from 'react-blurhash';
 
-export default function Card({ image, teamMember, description }) {
+export default function Card({ image, hashString, teamMember, description }) {
+    const [imageLoaded, setImageLoaded] = useState(false);
+    const imageRef = useRef(null);
+    const [containerSize, setContainerSize] = useState({ height: 300, width: 400 }); // Default size
+
+    useEffect(() => {
+        const img = new Image();
+        img.onload = () => {
+            setImageLoaded(true);
+        };
+        img.src = image;
+    }, [image]);
+
+    useEffect(() => {
+        if (imageRef.current) {
+            const { width, height } = imageRef.current.getBoundingClientRect();
+            setContainerSize({ height, width });
+        }
+    }, [image]);
+
     return (
         <section className="highlight">
-            <div className="image featured"> 
-                
-                <LazyLoadImage
-                    alt=''
-                    src={image}
-                    height='100%'
-                    width='100%'
-                    effect='blur'
-                />
+            <div className="image featured" ref={imageRef}>
+                {!imageLoaded && (
+                    <Blurhash
+                        src={image}
+                        hash={hashString}
+                        height={containerSize.height}
+                        width={containerSize.width}
+                        resolutionX={32}
+                        resolutionY={32}
+                        punch={1}
+                    />
+                )}
+                {imageLoaded && <img src={image} alt="" />}
             </div>
             <h3>{teamMember}</h3>
             <p>{description}</p>

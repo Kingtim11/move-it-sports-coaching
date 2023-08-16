@@ -10,8 +10,6 @@ import Josh from "../assets/images/josh.JPEG";
 import Logo from "../assets/images/moveit3.jpeg";
 import Sections from '../components/Sections';
 import { FaInstagram } from 'react-icons/fa';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export default function HomePage() {
 
@@ -39,12 +37,9 @@ export default function HomePage() {
 
                     <div className="image featured">
                         
-                        <LazyLoadImage
+                        <img
                             alt=''
                             src={Banner}
-                            height='100%'
-                            width='100%'
-                            effect='blur'
                         />
                     </div>
                 </>
@@ -119,7 +114,8 @@ export default function HomePage() {
                     <div className="col-4 col-12-medium">
 
                         <Card 
-                            image={Josh} 
+                            image={Josh}
+                            hashString="LzOyO^i_?^bb?^W;t8ofIVkCV?n%"
                             teamMember="Josh - Lead Coach" 
                             description={
                             <>
@@ -203,15 +199,13 @@ export default function HomePage() {
                     </ul>
                 </div>
                 </>
-        
         }
-
     ]
 
     return (
         <div className='homepage is-preload'>
             <div id='page-wrapper'>
-
+        {/*if !imageLoaded && create loading screen  */}
                 {sections.map((section, index) => (
                     <React.Fragment key={index}>
                         <Sections 
@@ -223,7 +217,6 @@ export default function HomePage() {
                         />
                     </React.Fragment>
                 ))}
-                
             </div>
         </div>
     );

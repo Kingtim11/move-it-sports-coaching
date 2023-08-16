@@ -7,11 +7,12 @@ import Neil from "../assets/images/coachNeil.jpg";
 import Hollie from "../assets/images/coachHollie.jpeg";
 import Robert from "../assets/images/coachRobert.jpg";
 
-export default function WhatWeOfferPage() {
+export default function MeetTheTeamPage() {
 
     const teamMembers = [
         {
             image: Josh,
+            hashString: "LzOyO^i_?^bb?^W;t8ofIVkCV?n%",
             teamMember: "Josh - Lead Coach",
             description: <>
                 Joshua Ayres, lead coach and founder of Move it Sports Coaching.
@@ -26,6 +27,7 @@ export default function WhatWeOfferPage() {
         },
         {
             image: Abi,
+            hashString: "LEE.*Isl[Qt8}MoyF*Rk#gogtUWA",
             teamMember: "Abi - Lead Coach",
             description: <>
                 Coach Abi has over 12 years of coaching experience and is a keen triathlete. 
@@ -35,6 +37,7 @@ export default function WhatWeOfferPage() {
         },
         {
             image: Neil,
+            hashString: "LGG8H6Ipxis:~0t6NhWB^YoJR=af",
             teamMember: "Neil - Lead Coach",
             description: <>
                 Coach Neil has over 35 years coaching experience. 
@@ -44,6 +47,7 @@ export default function WhatWeOfferPage() {
         },
         {
             image: Hollie,
+            hashString: "LCI#T9Ob8wng@Xi]%%WBtnxZ$*tS",
             teamMember: "Hollie - Lead Coach",
             description: <>
                 Coach Hollie has been part of the Move It team for the last 4 years. 
@@ -53,6 +57,7 @@ export default function WhatWeOfferPage() {
         },
         {
             image: Robert,
+            hashString: "LMHUIDWV~As.~BW;E3oLt6WWoLWC",
             teamMember: "Robert - Assistant Coach",
             description: <>
                 Coach Robert has been working with primary aged children for over a year and a half. 
@@ -78,7 +83,8 @@ export default function WhatWeOfferPage() {
                     {teamMembers.map((teamMember, index) => (
                         <div key={index} className="col-4 col-12-medium">
                             <Card 
-                                image={teamMember.image} 
+                                image={teamMember.image}
+                                hashString={teamMember.hashString}
                                 teamMember={teamMember.teamMember} 
                                 description={teamMember.description}  
                             />
@@ -91,7 +97,6 @@ export default function WhatWeOfferPage() {
     return (
         <div className="bookingpage is-preloaded">
             <div id="page-wrapper">
-
             {sections.map((section, index) => (
                     <React.Fragment key={index}>
                         <Sections 
@@ -104,7 +109,6 @@ export default function WhatWeOfferPage() {
                     </React.Fragment>
                 ))
             }
-
             </div>
         </div>
     );
