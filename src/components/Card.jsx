@@ -8,18 +8,18 @@ export default function Card({ image, hashString, teamMember, description }) {
     const [containerSize, setContainerSize] = useState({ height: 300, width: 400 }); // Default size
 
     useEffect(() => {
+        
         const img = new Image();
         img.onload = () => {
             setImageLoaded(true);
         };
         img.src = image;
-    }, [image]);
 
-    useEffect(() => {
         if (imageRef.current) {
             const { width, height } = imageRef.current.getBoundingClientRect();
             setContainerSize({ height, width });
         }
+
     }, [image]);
 
     return (

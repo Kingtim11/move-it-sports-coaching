@@ -10,6 +10,7 @@ import Josh from "../assets/images/josh.JPEG";
 import Logo from "../assets/images/moveit3.jpeg";
 import Sections from '../components/Sections';
 import { FaInstagram } from 'react-icons/fa';
+import PreLoad from '../components/PreLoad';
 
 export default function HomePage() {
 
@@ -203,6 +204,7 @@ export default function HomePage() {
     ]
 
     return (
+        <>
         <div className='homepage is-preload'>
             <div id='page-wrapper'>
         {/*if !imageLoaded && create loading screen  */}
@@ -219,5 +221,7 @@ export default function HomePage() {
                 ))}
             </div>
         </div>
+        <PreLoad />
+        </>
     );
 }

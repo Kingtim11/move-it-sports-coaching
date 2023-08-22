@@ -55,13 +55,13 @@
                                 }
 
                                 /*Nav button does not display for wide screens*/
-                                @media screen and (min-width: 736px) {
+                                @media screen and (min-width: 1200px) {
                                     .nav-button-container {
                                         display: none;
                                     }
                                 }                     
                                 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 1200px) {
 /*Set the nav menu when the screen size is smaller than 736px*/
     .navigation {
         top: 0.1rem;

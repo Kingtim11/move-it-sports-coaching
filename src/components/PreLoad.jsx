@@ -9,7 +9,7 @@ import Robert from "../assets/images/coachRobert.jpg";
 
 //const imagesToPreload = [{image: Logo}, {image: Banner}, {image: Josh}, {image: Abi}, {image: Neil}, {image: Hollie}, {image: Robert}];
 
-export default function PreLoad(image) {
+export default function PreLoad() {
     /*useEffect(() => {
         imagesToPreload.forEach(image => {
             const img = new Image();
@@ -18,13 +18,14 @@ export default function PreLoad(image) {
     }, []);
 
     return null; */
+    const cardImage = [Logo, Banner, Josh, Abi, Neil, Hollie, Robert]
 
-    const cardImage = [
-        {image: Logo}, {image: Banner}, {image: Josh}, {image: Abi}, {image: Neil}, {image: Hollie}, {image: Robert}]
+    /*const cardImage = [
+        {image: Logo}, {image: Banner}, {image: Josh}, {image: Abi}, {image: Neil}, {image: Hollie}, {image: Robert}]*/
     return (
-        cardImage.map((image, index) => (
+        cardImage.map((cardImage, index) => (
             <React.Fragment key={index}>
-                <img src={image.image} alt="" style={{display: 'none'}} />
+                <img src={cardImage} alt="" style={{display: 'none'}} />
             </React.Fragment>
         ))
     );

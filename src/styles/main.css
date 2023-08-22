@@ -2307,7 +2307,7 @@ input, select, textarea {
 					color: #2e99d6;
 				}
 
-	.dropotron {
+	/*.dropotron {
 		background: #222835 url("../assets/images/overlay.png");
 		background-color: rgba(46,153,214, 0.9);
 		padding: 1.25em 1em 1.25em 1em;
@@ -2354,7 +2354,7 @@ input, select, textarea {
 			.dropotron li:hover > a, .dropotron li:hover > span {
 				color: #fff;
 				scale: 1.05;
-			}
+			}*/
 
 /* Intro */
 
