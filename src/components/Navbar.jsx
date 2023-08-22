@@ -26,10 +26,8 @@ export default function Navbar() {
         setIsNavExpanded(!isNavExpanded);
         if (!isNavExpanded) {
             document.body.setAttribute('id', 'nav-expanded');
-            document.body.style.overflow = 'hidden';
           } else {
-            document.body.setAttribute('id', 'nav-menu');
-            document.body.style.overflow = 'visible';
+            document.body.setAttribute('id', 'nav-menu');  
           }
     }
 
