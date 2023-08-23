@@ -115,12 +115,12 @@
             border-radius: 0.35rem;
             /*box-shadow: inset 0px 0px 1px 1px rgba(46,153,214, 0.9);*/
             background-color: rgba(46,153,214, 0);
-            
+            transition: transform 2s ease;
         }
         .nav-icon:hover {
             color: #2e99d6;
             background-color: rgba(46,153,214, 0);
-            transform: scale(1.1);
+            transform: scale(1.5);
         }
         #nav-menu {
             transform: translateX(0);
