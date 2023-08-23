@@ -10,7 +10,6 @@ import Josh from "../assets/images/josh.JPEG";
 import Logo from "../assets/images/moveit3.jpeg";
 import Sections from '../components/Sections';
 import { FaInstagram } from 'react-icons/fa';
-import PreLoad from '../components/PreLoad';
 
 export default function HomePage() {
 
@@ -30,7 +29,7 @@ export default function HomePage() {
             sectionHeader: 'Introduction',
             content:
                 <>
-                    <p className="style2"> {/* Adjust the font size and remove border. */}
+                    <p className="style2">
                     We are a sports coaching company based in North Kingston. Our mission is to instil a passion for sports and 
                     physical activity in children while promoting lifelong participation in exercise through engaging activities 
                     like running, dodging, tagging, and ball games.
@@ -108,7 +107,6 @@ export default function HomePage() {
                     </ul>
                 </section>
                 </>
-            
         },
         {
             sectionId: 'highlights',
@@ -171,7 +169,7 @@ export default function HomePage() {
                     </div>
                     <div className="col-6 col-12-medium">
 
-                        {/* Contact - Phone possiblly coming later. Update instagram icon and link for social.*/}
+                        {/* Contact - Phone possiblly coming later.*/}
                         <section className="feature-list small">
                             <div className="row">
                                 <div className="col-6 col-12-small">
@@ -189,20 +187,15 @@ export default function HomePage() {
                                         <FaInstagram size={20} color="currentColor" />
                                             <p style={{color: 'white'}}>Follow us on Instagram</p>
                                         </a>
-                                        
                                     </section>
                                 </div>
-                                <div className="col-6 col-12-small">
-                                
-                                </div>
-                                
                             </div>
                         </section>
                     </div>
                 </div>
                 <div id="copyright">
                     <ul>
-                        <li>&copy;Move it! Sports Coaching</li><li>Design: <Link className='link-style2' to="http://html5up.net">HTML5 UP</Link></li><li>Web Development: <Link className='link-style2' href="https://timking.netlify.app/">Tim King</Link></li>
+                        <li>&copy;Move it! Sports Coaching</li><li>Design: <Link className='link-style2' to="http://html5up.net">HTML5 UP</Link></li><li>Web Development: <Link className='link-style2' to="https://timking.netlify.app/">Tim King</Link></li>
                     </ul>
                 </div>
                 </>
@@ -226,7 +219,6 @@ export default function HomePage() {
                 ))}
             </div>
         </div>
-        <PreLoad />
         </>
     );
 }

@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import Button from './Button';
 
+const API_URL = "https://move-it-sports-coaching-api.onrender.com/send-email";
+//const DEV_URL = 'http://localhost:8080/send-email';
+
 export default function ContactForm() {
     const [isEmailSubmitted, setIsEmailSubmitted] = useState(false);
+    const [isEmailFailed, setIsEmailFailed] = useState(false)
 
     //HandleSubmit and POST to the server.
     function handleSubmit(e) {
@@ -12,31 +16,32 @@ export default function ContactForm() {
         const formData = new FormData(form);
         const formJson = Object.fromEntries(formData.entries());
       
-        //fetch('http://localhost:8080/send-email' - Dev
-        fetch('https://move-it-sports-coaching-api.onrender.com/send-email', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formJson),
+        fetch(API_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formJson),
         })
-        .then((response) => {
-            if (response.ok) {
-                form.reset();
-                setIsEmailSubmitted(true);
-                return response.json();
-            }
-            throw new Error('Something went wrong');
-        })
-        .then((responseJson) => {
-            console.log(responseJson);
-        })
-        .catch((error) => {
-            console.error(error);
-        });
+            .then(response => {
+                if (response.ok) {
+                    form.reset();
+                    setIsEmailSubmitted(true);
+                    setIsEmailFailed(false); // Reset email failed status
+                    return response.json();
+                }
+                throw new Error('Something went wrong');
+            })
+            .then(responseJson => {
+                return responseJson;
+            })
+            .catch(error => {
+                setIsEmailFailed(true);
+                console.error(error);
+            });       
     }
 
-    if(!isEmailSubmitted) {
+    if(!isEmailSubmitted && !isEmailFailed) {
         return (
             <section>
                 <form onSubmit={handleSubmit}>
@@ -90,9 +95,11 @@ export default function ContactForm() {
     } 
         return(
             <div>
+            {isEmailFailed ? (
+                <h1 className="emailMessage">Email failed to send. Please try again later.</h1>
+            ) : (
                 <h1 className="emailMessage">Thank You! Your message has been sent.</h1>
-            </div>
+            )}
+        </div>
         );
-
-        // Create an error message.....
 }

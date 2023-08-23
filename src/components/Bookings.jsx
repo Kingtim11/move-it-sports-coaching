@@ -3,7 +3,7 @@ import React from "react";
 export default function Bookings() {
 
   return (
-    <div>
+    <div className="image featured">
       <iframe
         id="Iframe"
         src="https://joshua-ayres-sports-coaching.class4kids.co.uk"
