@@ -98,7 +98,7 @@ export default function ContactForm() {
             {isEmailFailed ? (
                 <h1 className="emailMessage">Email failed to send. Please try again later.</h1>
             ) : (
-                <h1 className="emailMessage">Thank You! Your message has been sent.</h1>
+                <h1 className="emailMessage">Thank you! Your message has been sent.</h1>
             )}
         </div>
         );
