@@ -62,7 +62,7 @@
                                 }                     
                                 
 @media screen and (max-width: 1200px) {
-/*Set the nav menu when the screen size is smaller than 736px*/
+/*Set the nav menu when the screen size is smaller than 1200px*/
     .navigation {
         top: 0.1rem;
     }
@@ -79,7 +79,7 @@
         flex-direction: column;
         width: 275px;
         transform: translateX(-275px);
-        height: 100%;
+        height: 20000px;
         background-color: #2e99d6;
         color: #eee;
         transition: all 0.5s ease;

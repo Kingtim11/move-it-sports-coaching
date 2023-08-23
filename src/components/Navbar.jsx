@@ -13,6 +13,7 @@ export default function Navbar() {
         function handleClickOutside(event) {
             if (!event.target.closest('.nav-menu') && !event.target.closest('.nav-icon')) {
                 document.body.setAttribute('id', 'nav-menu');
+                //document.body.style.overflowY = 'visible';
                 setIsNavExpanded(false);
             }
         }
@@ -26,8 +27,10 @@ export default function Navbar() {
         setIsNavExpanded(!isNavExpanded);
         if (!isNavExpanded) {
             document.body.setAttribute('id', 'nav-expanded');
+            //document.body.style.overflowY = 'hidden';
           } else {
-            document.body.setAttribute('id', 'nav-menu');  
+            document.body.setAttribute('id', 'nav-menu');
+            //document.body.style.overflowY = 'visible';
           }
     }
 
