@@ -31,18 +31,24 @@ export default function HomePage() {
             content:
                 <>
                     <p className="style2"> {/* Adjust the font size and remove border. */}
-                    We are a sports coaching company based in North Kingston. Our mission is to instill a passion for sports and 
+                    We are a sports coaching company based in North Kingston. Our mission is to instil a passion for sports and 
                     physical activity in children while promoting lifelong participation in exercise through engaging activities 
                     like running, dodging, tagging, and ball games.
                     </p>
 
-                    <div className="image featured">
+                        <Card 
+                            image={Banner}
+                            alt={"Children posing for a group photo on a basketball court, in front of the net."}
+                            hashString={'L3FYfYX-000J00tS00doHD$*8^Mu'}
+                            teamMember={""} 
+                            description={""}  
+                        />
                         
-                        <img
+                        {/*<img
                             alt=''
                             src={Banner}
-                        />
-                    </div>
+                        />*/}
+                    
                 </>
         },
         {
@@ -207,7 +213,6 @@ export default function HomePage() {
         <>
         <div className='homepage is-preload'>
             <div id='page-wrapper'>
-        {/*if !imageLoaded && create loading screen  */}
                 {sections.map((section, index) => (
                     <React.Fragment key={index}>
                         <Sections 

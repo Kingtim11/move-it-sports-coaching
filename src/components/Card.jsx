@@ -2,13 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../styles/main.css';
 import { Blurhash } from 'react-blurhash';
 
-export default function Card({ image, hashString, teamMember, description }) {
+export default function Card({ image, alt, hashString, teamMember, description }) {
     const [imageLoaded, setImageLoaded] = useState(false);
     const imageRef = useRef(null);
     const [containerSize, setContainerSize] = useState({ height: 300, width: 400 }); // Default size
 
-    useEffect(() => {
-        
+    useEffect(() => { 
         const img = new Image();
         img.onload = () => {
             setImageLoaded(true);
@@ -19,7 +18,6 @@ export default function Card({ image, hashString, teamMember, description }) {
             const { width, height } = imageRef.current.getBoundingClientRect();
             setContainerSize({ height, width });
         }
-
     }, [image]);
 
     return (
@@ -36,7 +34,7 @@ export default function Card({ image, hashString, teamMember, description }) {
                         punch={1}
                     />
                 )}
-                {imageLoaded && <img src={image} alt="" />}
+                {imageLoaded && <img src={image} alt={alt} />}
             </div>
             <h3>{teamMember}</h3>
             <p>{description}</p>
