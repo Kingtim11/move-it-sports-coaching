@@ -77,9 +77,9 @@
         position: fixed;
         display: flex;
         flex-direction: column;
+        height: 100%;
         width: 275px;
         transform: translateX(-275px);
-        height: 20000px;
         background-color: #2e99d6;
         color: #eee;
         transition: all 0.5s ease;
