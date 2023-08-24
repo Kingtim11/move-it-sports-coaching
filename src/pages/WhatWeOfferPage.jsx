@@ -3,13 +3,23 @@ import { Link } from "react-router-dom";
 import Sections from "../components/Sections";
 import Button from "../components/Button";
 import Table from "../components/Table";
+import '../styles/main.css';
 
 export default function WhatWeOfferPage() {
 
     const sections = [
         {
             sectionId: 'header',
-            sectionClassName: 'wrapper style2'
+            sectionClassName: 'wrapper style2',
+            content:
+                <ul className="actions">
+                        <li>
+                            <Link to="/bookings">
+                                <Button name="Multi-skills Camp" buttonStyle="button style1 large" />
+                            </Link>
+                        </li>
+                    </ul>
+                    
         },
         {
             sectionClassName: 'wrapper style2',
