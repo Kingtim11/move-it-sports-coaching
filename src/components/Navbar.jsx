@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import '../styles/Navbar.css';
+import '../styles/NavbarTest.css';
 
 export default function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-    function NavMenuItem({ to, children }) {
+    function NavMenuItem({ to, children, onClick }) {
         return (
             <li>
-                <Link to={to} onClick={handleClick}>
+                <Link to={to} onClick={onClick}>
                     {children}
                 </Link>
             </li>
@@ -52,6 +52,7 @@ export default function Navbar() {
         document.body.setAttribute('id', isNavExpanded ? 'nav-menu' : 'nav-expanded');
     }
 
+
     const navMenuClassName = isNavExpanded ? 'nav-menu expanded' : 'nav-menu';
 
     return (
@@ -64,7 +65,38 @@ export default function Navbar() {
             <div className={navMenuClassName}>
                 <ul>
                     <NavMenuItem to="/" onClick={handleClick}>Home</NavMenuItem>
-                    <NavMenuItem to="/what-we-offer" onClick={handleClick}>What we Offer</NavMenuItem>
+                    
+                    
+                    <NavMenuItem to="/what-we-offer" onClick={handleClick}>What we Offer
+                        <ul className='submenu'>
+                            <li>
+                                <HashLink 
+                                    smooth to="/what-we-offer/#multi-skills" 
+                                    scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} 
+                                    onClick={handleClick}>
+                                    Multi-skills Camp
+                                </HashLink>
+                            </li>
+                            <li>
+                                <HashLink 
+                                    smooth to="/what-we-offer/#dodgeball" 
+                                    scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} 
+                                    onClick={handleClick}>
+                                    Dodgeball Club
+                                </HashLink>
+                            </li>
+                            <li>
+                                <HashLink 
+                                    smooth to="/what-we-offer/#birthday" 
+                                    scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })} 
+                                    onClick={handleClick}>
+                                    Birthday Parties
+                                </HashLink>
+                            </li>
+                        </ul>
+                    </NavMenuItem>
+                
+
                     <NavMenuItem to="/meet-the-team" onClick={handleClick}>Meet the team</NavMenuItem>
                     <NavMenuItem to="/bookings" onClick={handleClick}>Bookings</NavMenuItem>
                     <li>
