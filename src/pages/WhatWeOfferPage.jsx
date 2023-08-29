@@ -10,16 +10,7 @@ export default function WhatWeOfferPage() {
     const sections = [
         {
             sectionId: 'header',
-            sectionClassName: 'wrapper style2',
-            content:
-                <ul className="actions">
-                        <li>
-                            <Link to="/bookings">
-                                <Button name="Multi-skills Camp" buttonStyle="button style1 large" />
-                            </Link>
-                        </li>
-                    </ul>
-                    
+            sectionClassName: 'wrapper style2',         
         },
         {
             sectionClassName: 'wrapper style2',
@@ -94,7 +85,6 @@ export default function WhatWeOfferPage() {
     return (
         <div className="bookingpage is-preloaded">
             <div id="page-wrapper">
-                
             {sections.map((section, index) => (
                     <React.Fragment key={index}>
                         <Sections 

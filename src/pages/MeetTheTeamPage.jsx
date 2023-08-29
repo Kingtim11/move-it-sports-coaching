@@ -3,9 +3,9 @@ import Card from '../components/Card';
 import Sections from "../components/Sections";
 import Josh from "../assets/images/josh.JPEG";
 import Abi from "../assets/images/coachAbi.jpg";
-import Neil from "../assets/images/coachNeil.jpg";
-import Hollie from "../assets/images/coachHollie.jpeg";
-import Robert from "../assets/images/coachRobert.jpg";
+import Neil from "../assets/images/coachNeilMin.jpg";
+import Hollie from "../assets/images/coachHollieMin.jpg";
+import Robert from "../assets/images/coachRobertMin.jpg";
 
 export default function MeetTheTeamPage() {
 
@@ -17,7 +17,7 @@ export default function MeetTheTeamPage() {
             description: <>
                 Joshua Ayres, lead coach and founder of Move it Sports Coaching.
                 <br /><br />
-                "I started Move it Sports Coaching over six years ago, previously under a different name, 
+                "I started Move it Sports Coaching over six years ago, previously under the name ‘Joshua Ayres Sports Coaching’, 
                 with the single vision to encourage lifelong participation in sport and physical activity for 
                 all children".
                 <br /><br />
@@ -47,7 +47,7 @@ export default function MeetTheTeamPage() {
         },
         {
             image: Hollie,
-            hashString: "LCI#T9Ob8wng@Xi]%%WBtnxZ$*tS",
+            hashString: "LCI#T9Ob8wng@Xi]%%WBtnxZ$*ts",
             teamMember: "Hollie - Lead Coach",
             description: <>
                 Coach Hollie has been part of the Move It team for the last 4 years. 

@@ -23,22 +23,22 @@ export default function ContactForm() {
             },
             body: JSON.stringify(formJson),
         })
-            .then(response => {
-                if (response.ok) {
-                    form.reset();
-                    setIsEmailSubmitted(true);
-                    setIsEmailFailed(false); // Reset email failed status
-                    return response.json();
-                }
-                throw new Error('Something went wrong');
-            })
-            .then(responseJson => {
-                return responseJson;
-            })
-            .catch(error => {
-                setIsEmailFailed(true);
-                console.error(error);
-            });       
+        .then(response => {
+            if (response.ok) {
+                form.reset();
+                setIsEmailSubmitted(true);
+                setIsEmailFailed(false); // Reset email failed status
+                return response.json();
+            }
+            throw new Error('Something went wrong');
+        })
+        .then(responseJson => {
+            return responseJson;
+        })
+        .catch(error => {
+            setIsEmailFailed(true);
+            console.error(error);
+        });       
     }
 
     if(!isEmailSubmitted && !isEmailFailed) {
@@ -96,7 +96,7 @@ export default function ContactForm() {
         return(
             <div>
             {isEmailFailed ? (
-                <h1 className="emailMessage">Email failed to send. Please try again later.</h1>
+                <h1 className="emailMessage">Email failed to send. Please try again later or email us directly.</h1>
             ) : (
                 <h1 className="emailMessage">Thank you! Your message has been sent.</h1>
             )}

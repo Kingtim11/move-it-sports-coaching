@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import ContactForm from '../components/ContactForm';
-import Banner from '../assets/images/bannerImage.jpg';
+import Banner from '../assets/images/bannerMin.jpg';
 import Josh from "../assets/images/josh.JPEG";
 import Logo from "../assets/images/moveit3.jpeg";
 import Sections from '../components/Sections';
@@ -35,19 +35,11 @@ export default function HomePage() {
                     like running, dodging, tagging, and ball games.
                     </p>
 
-                        <Card 
-                            image={Banner}
-                            alt={"Children posing for a group photo on a basketball court, in front of the net."}
-                            hashString={'L3FYfYX-000J00tS00doHD$*8^Mu'}
-                            teamMember={""} 
-                            description={""}  
-                        />
-                        
-                        {/*<img
-                            alt=''
-                            src={Banner}
-                        />*/}
-                    
+                    <Card 
+                        image={Banner}
+                        alt={"Children posing for a group photo on a basketball court, in front of the net."}
+                        hashString={'L3FYfYX-000J00tS00doHD$*8^Mu'}
+                    />
                 </>
         },
         {
@@ -117,7 +109,6 @@ export default function HomePage() {
                 <>
                 <div className="row aln-center">
                     <div className="col-4 col-12-medium">
-
                         <Card 
                             image={Josh}
                             hashString="LzOyO^i_?^bb?^W;t8ofIVkCV?n%"
@@ -126,7 +117,7 @@ export default function HomePage() {
                             <>
                                 Joshua Ayres, lead coach and founder of Move it Sports Coaching.
                                 <br/><br/>
-                                "I started Move it Sports Coaching over six years ago, previously under a different name, 
+                                "I started Move it Sports Coaching over six years ago, previously under the name ‘Joshua Ayres Sports Coaching’, 
                                 with the single vision to encourage lifelong participation in sport and physical activity for 
                                 all children".
                                 <br/><br/>
@@ -193,11 +184,13 @@ export default function HomePage() {
                         </section>
                     </div>
                 </div>
+                
                 <div id="copyright">
                     <ul>
                         <li>&copy;Move it! Sports Coaching</li><li>Design: <Link className='link-style2' to="http://html5up.net">HTML5 UP</Link></li><li>Web Development: <Link className='link-style2' to="https://timking.netlify.app/">Tim King</Link></li>
                     </ul>
                 </div>
+    
                 </>
         }
     ]

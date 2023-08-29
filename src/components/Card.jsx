@@ -4,25 +4,24 @@ import { Blurhash } from 'react-blurhash';
 
 export default function Card({ image, alt, hashString, teamMember, description }) {
     const [imageLoaded, setImageLoaded] = useState(false);
-    const imageRef = useRef(null);
     const [containerSize, setContainerSize] = useState({ height: 300, width: 400 }); // Default size
-
+    const imageRef = useRef(null);
+    
     useEffect(() => { 
-        const img = new Image();
-        img.onload = () => {
-            setImageLoaded(true);
-        };
-        img.src = image;
-
         if (imageRef.current) {
             const { width, height } = imageRef.current.getBoundingClientRect();
             setContainerSize({ height, width });
         }
     }, [image]);
 
+    const handleImageLoad = () => {
+        setImageLoaded(true);
+    };
+
     return (
         <section className="highlight">
             <div className="image featured" ref={imageRef}>
+            
                 {!imageLoaded && (
                     <Blurhash
                         src={image}
@@ -34,7 +33,13 @@ export default function Card({ image, alt, hashString, teamMember, description }
                         punch={1}
                     />
                 )}
-                {imageLoaded && <img src={image} alt={alt} />}
+                <img 
+                    src={image} 
+                    alt={alt} 
+                    onLoad={handleImageLoad} 
+                    style={{ display: imageLoaded ? 'block' : 'none' }} 
+                />
+                
             </div>
             <h3>{teamMember}</h3>
             <p>{description}</p>
