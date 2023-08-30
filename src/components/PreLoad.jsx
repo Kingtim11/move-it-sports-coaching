@@ -7,14 +7,14 @@ import Neil from "../assets/images/coachNeilMin.jpg";
 import Hollie from "../assets/images/coachHollieMin.jpg";
 import Robert from "../assets/images/coachRobertMin.jpg";
 
-export default function PreLoad() {
-    const cardImage = [Logo, Banner, Josh, Abi, Neil, Hollie, Robert]
+const images = [Logo, Banner, Josh, Abi, Neil, Hollie, Robert];
 
+export default function PreLoad() {
     return (
-        cardImage.map((cardImage, index) => (
-            <React.Fragment key={index}>
-                <img src={cardImage} alt="" style={{display: 'none'}} />
-            </React.Fragment>
-        ))
+        <>
+            {images.map((image, index) => (
+                <img key={index} src={image} alt="" style={{ display: 'none' }} />
+            ))}
+        </>
     );
 }

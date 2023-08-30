@@ -3,19 +3,22 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import '../styles/Navbar.css';
+
+function NavMenuItem({ to, children, onClick }) {
+    return (
+        <li>
+            <Link to={to} onClick={onClick}>
+                {children}
+            </Link>
+        </li>
+    );
+}
 
 export default function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-    function NavMenuItem({ to, children, onClick }) {
-        return (
-            <li>
-                <Link to={to} onClick={onClick}>
-                    {children}
-                </Link>
-            </li>
-        );
+    function handleClick() {
+        setIsNavExpanded(!isNavExpanded);
     }
 
     useEffect(() => {
@@ -28,26 +31,22 @@ export default function Navbar() {
         document.addEventListener('click', handleClickOutside);
 
         // Add event listener for screen width and navbar expansion
-        function handleScreenWidth() {
+        function handleResize() {
             if (window.innerWidth < 770 && isNavExpanded) {
                 document.body.style.overflowY = 'hidden';
             } else {
                 document.body.style.overflowY = 'visible';
             }
         }
-        // Call the handleScreenWidth initially and whenever isNavExpanded changes
-        handleScreenWidth();
-        window.addEventListener('resize', handleScreenWidth);
+        // Call the handleResize initially and whenever isNavExpanded changes
+        handleResize();
+        window.addEventListener('resize', handleResize);
 
         return () => {
             document.removeEventListener('click', handleClickOutside);
-            window.removeEventListener('resize', handleScreenWidth);
+            window.removeEventListener('resize', handleResize);
         };
     }, [isNavExpanded]);
-
-    function handleClick() {
-        setIsNavExpanded(!isNavExpanded);
-    }
 
     const navMenuClassName = isNavExpanded ? 'nav-menu expanded' : 'nav-menu';
 

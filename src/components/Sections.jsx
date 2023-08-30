@@ -10,11 +10,9 @@ export default function Sections({
     return (
         <section id={sectionId} className={sectionClassName}>
             <div className={divClassName}>{sectionHeader}</div>
-                <div className="container">
-
-                    {content}
-
-                </div>
+            <div className="container">
+                {content}
+            </div>
         </section>
     );
 }

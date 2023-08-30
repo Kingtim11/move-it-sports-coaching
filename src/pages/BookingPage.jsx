@@ -3,7 +3,6 @@ import Bookings from "../components/Bookings";
 import Sections from "../components/Sections";
 
 export default function BookingPage() {
-
     const sections = [
         {
             sectionId: 'header',
@@ -13,18 +12,16 @@ export default function BookingPage() {
             sectionClassName: 'wrapper style1',
             divClassName: 'title',
             sectionHeader: 'Bookings',
-            content:
-                <Bookings />
+            content: <Bookings />
         }
     ];
 
     return (
         <div className="bookingpage is-preloaded">
             <div id='page-wrapper'>
-
-            {sections.map((section, index) => (
+                {sections.map((section, index) => (
                     <React.Fragment key={index}>
-                        <Sections 
+                        <Sections
                             sectionId={section.sectionId}
                             sectionClassName={section.sectionClassName}
                             divClassName={section.divClassName}
@@ -36,6 +33,6 @@ export default function BookingPage() {
             }
             </div>
         </div>
-        
+
     );
 }

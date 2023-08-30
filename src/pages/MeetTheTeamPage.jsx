@@ -8,7 +8,6 @@ import Hollie from "../assets/images/coachHollieMin.jpg";
 import Robert from "../assets/images/coachRobertMin.jpg";
 
 export default function MeetTheTeamPage() {
-
     const teamMembers = [
         {
             image: Josh,

@@ -1,4 +1,5 @@
-import './App.css';
+import '../src/styles/main.css';
+import '../src/styles/Navbar.css';
 import { 
   Route, 
   RouterProvider, 
@@ -29,6 +30,5 @@ export default function App() {
       <RouterProvider router={router} />
       <PreLoad />
     </>
-      
   );
 }

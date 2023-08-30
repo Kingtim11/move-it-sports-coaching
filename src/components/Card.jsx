@@ -1,27 +1,32 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import '../styles/main.css';
 import { Blurhash } from 'react-blurhash';
 
-export default function Card({ image, alt, hashString, teamMember, description }) {
+function useImageLoader(imageRef) {
     const [imageLoaded, setImageLoaded] = useState(false);
-    const [containerSize, setContainerSize] = useState({ height: 500, width: null }); // Default size
-    const imageRef = useRef(null);
-    
-    useEffect(() => { 
-        if (imageRef.current) {
-            const { height, width } = imageRef.current.getBoundingClientRect();
-            setContainerSize({ height, width });
-        }
-    }, [image]);
+    const [containerSize, setContainerSize] = useState({ height: 460, width: null });
 
     const handleImageLoad = () => {
         setImageLoaded(true);
     };
 
+    React.useEffect(() => {
+        if (imageRef.current) {
+            const { height, width } = imageRef.current.getBoundingClientRect();
+            setContainerSize({ height, width });
+        }
+    }, [imageRef]);
+
+    return { imageLoaded, containerSize, handleImageLoad };
+}
+
+export default function Card({ image, alt, hashString, teamMember, description }) {
+    const imageRef = useRef(null);
+    const { imageLoaded, containerSize, handleImageLoad } = useImageLoader(imageRef);
+
     return (
         <section className="highlight">
             <div className="image featured" ref={imageRef}>
-            
                 {!imageLoaded && (
                     <Blurhash
                         src={image}
@@ -33,13 +38,12 @@ export default function Card({ image, alt, hashString, teamMember, description }
                         punch={1}
                     />
                 )}
-                <img 
-                    src={image} 
-                    alt={alt} 
-                    onLoad={handleImageLoad} 
-                    style={{ display: imageLoaded ? 'block' : 'none' }} 
+                <img
+                    src={image}
+                    alt={alt}
+                    onLoad={handleImageLoad}
+                    style={{ display: imageLoaded ? 'block' : 'none' }}
                 />
-                
             </div>
             <h3>{teamMember}</h3>
             <p>{description}</p>
