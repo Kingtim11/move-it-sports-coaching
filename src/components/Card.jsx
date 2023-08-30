@@ -4,12 +4,12 @@ import { Blurhash } from 'react-blurhash';
 
 export default function Card({ image, alt, hashString, teamMember, description }) {
     const [imageLoaded, setImageLoaded] = useState(false);
-    const [containerSize, setContainerSize] = useState({ height: 300, width: 400 }); // Default size
+    const [containerSize, setContainerSize] = useState({ height: 500, width: null }); // Default size
     const imageRef = useRef(null);
     
     useEffect(() => { 
         if (imageRef.current) {
-            const { width, height } = imageRef.current.getBoundingClientRect();
+            const { height, width } = imageRef.current.getBoundingClientRect();
             setContainerSize({ height, width });
         }
     }, [image]);

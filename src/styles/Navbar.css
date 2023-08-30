@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 770px) {
     .navigation {
         font-family: 'Times New Roman', Times, serif;
         margin: 0;
@@ -86,14 +86,14 @@
                                     }
                                     
                                     /*Nav button does not display for wide screens*/
-                                    @media screen and (min-width: 1200px) {
+                                    @media screen and (min-width: 770px) {
                                         .nav-button-container {
                                             display: none;
                                         }
                                     }     
                                 }                
                                     
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 770px) {
     /*Set the nav menu when the screen size is smaller than 1200px*/
         .navigation {
             font-family: 'Times New Roman', Times, serif;
@@ -147,7 +147,7 @@
                     .nav-menu.expanded .submenu {
                         position: relative;
                         height: auto;
-                        width: fit-content;
+                        width: max-content;
                         margin: 0;
                         text-align: left;
                     }
@@ -169,7 +169,7 @@
                             font-size: 0.7em;
                             letter-spacing: 0.25em;
                             height: 5em;
-                            line-height: 4em;
+                            line-height: 3em;
                             -moz-transition: all .25s ease-in-out;
                             -webkit-transition: all .25s ease-in-out;
                             -o-transition: all .25s ease-in-out;

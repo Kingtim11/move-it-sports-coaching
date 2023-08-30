@@ -109,7 +109,7 @@ export default function HomePage() {
                 <>
                 <div className="row aln-center">
                     <div className="col-4 col-12-medium">
-                        <Card 
+                        <Card
                             image={Josh}
                             hashString="LzOyO^i_?^bb?^W;t8ofIVkCV?n%"
                             teamMember="Josh - Lead Coach" 

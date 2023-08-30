@@ -25,12 +25,11 @@ export default function Navbar() {
                 setIsNavExpanded(false);
             }
         }
-
         document.addEventListener('click', handleClickOutside);
 
         // Add event listener for screen width and navbar expansion
         function handleScreenWidth() {
-            if (window.innerWidth < 1200 && isNavExpanded) {
+            if (window.innerWidth < 770 && isNavExpanded) {
                 document.body.style.overflowY = 'hidden';
             } else {
                 document.body.style.overflowY = 'visible';
@@ -48,7 +47,6 @@ export default function Navbar() {
 
     function handleClick() {
         setIsNavExpanded(!isNavExpanded);
-        //document.body.setAttribute('id', isNavExpanded ? 'nav-menu' : 'nav-expanded');
     }
 
     const navMenuClassName = isNavExpanded ? 'nav-menu expanded' : 'nav-menu';
@@ -89,8 +87,6 @@ export default function Navbar() {
                             </li>
                         </ul>
                     </NavMenuItem>
-                
-
                     <NavMenuItem to="/meet-the-team" onClick={handleClick}>Meet the team</NavMenuItem>
                     <NavMenuItem to="/bookings" onClick={handleClick}>Bookings</NavMenuItem>
                     <li>
