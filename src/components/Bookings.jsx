@@ -1,6 +1,6 @@
 import React from "react";
 
-const bookingFormURL = "https://joshua-ayres-sports-coaching.class4kids.co.uk";
+const bookingFormURL = "https://move-it-sports-coaching.classforkids.io/";
 
 export default function Bookings() {
   return (
