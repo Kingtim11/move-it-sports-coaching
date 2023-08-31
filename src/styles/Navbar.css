@@ -116,7 +116,8 @@
                     display: flex;
                     position: fixed;
                     transform: translateX(0);
-                    padding: 0 1.5em 0 1.5em;
+                    padding: 1em 1.5em 1em 1.5em;
+
                 }
                 .nav-menu ul {
                     position: fixed;
@@ -169,7 +170,7 @@
                             font-size: 0.7em;
                             letter-spacing: 0.25em;
                             height: 5em;
-                            line-height: 3em;
+                            line-height: 4em;
                             -moz-transition: all .25s ease-in-out;
                             -webkit-transition: all .25s ease-in-out;
                             -o-transition: all .25s ease-in-out;
