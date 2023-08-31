@@ -216,12 +216,9 @@ function FooterSection() {
         <div id="copyright">
             <ul>
                 <li>© 2023 Move it! Sports Coaching Ltd. All rights reserved.</li>
-                
-                <li>Design: <Link className='link-style2' to="http://html5up.net">HTML5 UP</Link></li>
                 <li>Web Development: <Link className='link-style2' to="https://timking.netlify.app/">Tim King</Link></li>
-            </ul><br />
-            <ul>
-            <li>Move it! Sports Coaching Ltd is a company registered in England and Wales with Company Number 14588755</li>
+                <li>Design: <Link className='link-style2' to="http://html5up.net">HTML5 UP</Link></li>
+                <p>Move it! Sports Coaching Ltd is a company registered in England and Wales with Company Number 14588755</p>
             </ul>
         </div>
     )
