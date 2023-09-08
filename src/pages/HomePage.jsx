@@ -9,6 +9,7 @@ import Josh from "../assets/images/josh.JPEG";
 import Logo from "../assets/images/moveit3.jpeg";
 import Sections from '../components/Sections';
 import { FaInstagram } from 'react-icons/fa';
+import InstaLogo from '../assets/images/InstaLogo.jpeg'
 
 const HomePageSections = [
     {
@@ -54,6 +55,9 @@ const HomePageSections = [
 function LogoSection() {
     return (
         <div className={"container-logo"}>
+            <a href="https://www.instagram.com/moveitsportscoaching/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" rel="noopener noreferrer">
+                <img src={InstaLogo} style={{height: '50px', width: '50px', position: 'absolute', top: '60px', right: '10px'}} />
+            </a>
             <img className="logo" src={Logo} alt="The logo for Move it! Sports Coaching. Children playing different sports."/>
         </div>
     )
@@ -218,7 +222,7 @@ function FooterSection() {
                 <li>© 2023 Move it! Sports Coaching Ltd. All rights reserved.</li>
                 <li>Web Development: <Link className='link-style2' to="https://timking.netlify.app/">Tim King</Link></li>
                 <li>Design: <Link className='link-style2' to="http://html5up.net">HTML5 UP</Link></li>
-                <p>Move it! Sports Coaching Ltd is a company registered in England and Wales with Company Number 14588755</p>
+                <p>Move it! Sports Coaching Ltd is a company registered in England and Wales with Company No. 14588755.</p>
             </ul>
         </div>
     )
