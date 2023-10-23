@@ -63,12 +63,12 @@ function MultiSkillsClub() {
         <section id="multi-skills-club">
             <h3 className="icon fa-comment">Multi-skills Club</h3>
             <p>
-                We understand that each child is different, so we tailor our birthday parties to suit their specific interests and preferences.
+                Join us for our Multi Skills Club, held every Friday morning during term time at Latchmere School Sports Hall from 08:00 to 08:45.
                 <br/><br/>
-                The most popular party options we receive are either sport-specific parties or multi-skills parties. Our sport-specific parties focus on a particular sport, while our multi-skills parties incorporate a variety of activities such as running, tagging, dodging, and ball games.
+                Play a wide range of running, dodging, tagging and ball games specifically designed to develop fundamental movement skills.
                 <br/><br/>
-                Contact us today to discuss how we can create an unforgettable birthday experience for your child.
-            </p>
+                Open to children from Reception - Year 2. 
+                </p>
         </section>
     )
 }
