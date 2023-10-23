@@ -65,9 +65,16 @@ export default function Navbar() {
                         <ul className='submenu'>
                             <li>
                                 <HashLink 
-                                    smooth to="/what-we-offer/#multi-skills" 
+                                    smooth to="/what-we-offer/#multi-skills-camp" 
                                     onClick={handleClick}>
                                     Multi-skills Camp
+                                </HashLink>
+                            </li>
+                            <li>
+                                <HashLink 
+                                    smooth to="/what-we-offer/#multi-skills-club" 
+                                    onClick={handleClick}>
+                                    Multi-skills Club
                                 </HashLink>
                             </li>
                             <li>

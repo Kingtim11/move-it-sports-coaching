@@ -4,9 +4,9 @@ import Sections from "../components/Sections";
 import Button from "../components/Button";
 import Table from "../components/Table";
 
-function MultiSkillsSection() {
+function MultiSkillsCamp() {
     return (
-        <section id="multi-skills">
+        <section id="multi-skills-camp">
             <h3 className="icon fa-comment">Multi-skills Camp</h3>
             <p>
                 Runs every school holiday at Latchmere School in North Kingston.
@@ -58,6 +58,21 @@ function BirthdayPartiesSection() {
     );
 }
 
+function MultiSkillsClub() {
+    return (
+        <section id="multi-skills-club">
+            <h3 className="icon fa-comment">Multi-skills Club</h3>
+            <p>
+                We understand that each child is different, so we tailor our birthday parties to suit their specific interests and preferences.
+                <br/><br/>
+                The most popular party options we receive are either sport-specific parties or multi-skills parties. Our sport-specific parties focus on a particular sport, while our multi-skills parties incorporate a variety of activities such as running, tagging, dodging, and ball games.
+                <br/><br/>
+                Contact us today to discuss how we can create an unforgettable birthday experience for your child.
+            </p>
+        </section>
+    )
+}
+
 export default function WhatWeOfferPage() {
 
     const sections = [
@@ -75,13 +90,16 @@ export default function WhatWeOfferPage() {
                         <div className="feature-list">
                             <div className="row">
                                 <div className="col-12 col-12-medium">
-                                    <MultiSkillsSection />
+                                    <MultiSkillsCamp />
                                 </div><br/>
                                 <div className="col-6 col-12-medium">
                                     <DodgeballSection />
                                 </div>
                                 <div className="col-6 col-12-medium">
                                     <BirthdayPartiesSection />
+                                </div><br />
+                                <div className="col-12 col-12-medium">
+                                    <MultiSkillsClub />
                                 </div>
                             </div>
                         </div>

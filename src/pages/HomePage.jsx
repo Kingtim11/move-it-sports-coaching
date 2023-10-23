@@ -87,8 +87,9 @@ function WhatWeOfferSection() {
                     <div className="row">
                         <div className="col-12 col-12-medium">
                             <section>
-                                <HashLink className='link-style1' to='/what-we-offer/#multi-skills'><h3 className="icon fa-comment">Multi-skills Camp</h3></HashLink>
+                                <HashLink className='link-style1' to='/what-we-offer/#multi-skills-camp'><h3 className="icon fa-comment">Multi-skills Camp</h3></HashLink>
                                 <p>
+                                Runs every school holiday at Latchmere School in North Kingston.<br /><br />
                                 Enjoy a variety of engaging games and activities designed to develop fundamental 
                                 movement skills and foster a lifelong passion for sports.
                                 </p>
@@ -115,6 +116,18 @@ function WhatWeOfferSection() {
                                 The most popular party options we receive are either sport-specific parties or multi-skills parties. Our sport-specific parties focus on a particular sport, while our multi-skills parties incorporate a variety of activities such as running, tagging, dodging, and ball games.
                                 <br/><br/>
                                 Contact us today to discuss how we can create an unforgettable birthday experience for your child.
+                                </p>
+                            </section>
+                        </div><br />
+                        <div className="col-12 col-12-medium">
+                            <section>
+                                <HashLink className='link-style1' to='/what-we-offer/#multi-skills-club'><h3 className="icon fa-comment">Multi-skills Club</h3></HashLink>
+                                <p>
+                                Join us for our Multi Skills Club, held every Friday morning during term time at Latchmere School Sports Hall from 08:00 to 08:45.
+                                <br/><br/>
+                                Play a wide range of running, dodging, tagging and ball games specifically designed to develop fundamental movement skills.
+                                <br/><br/>
+                                Open to children from Reception - Year 2. 
                                 </p>
                             </section>
                         </div>
@@ -216,7 +229,7 @@ function FooterSection() {
         <div id="copyright">
             <ul>
                 <li>© 2023 Move it! Sports Coaching Ltd. All rights reserved.</li>
-                <li>Web Development: <Link className='link-style2' to="https://timking.netlify.app/">Tim King</Link></li>
+                {/*<li>Web Development: <Link className='link-style2' to="https://timking.netlify.app/">Tim King</Link></li>*/}
                 <li>Design: <Link className='link-style2' to="http://html5up.net">HTML5 UP</Link></li>
                 <p>Move it! Sports Coaching Ltd is a company registered in England and Wales with Company Number 14588755</p>
             </ul>
