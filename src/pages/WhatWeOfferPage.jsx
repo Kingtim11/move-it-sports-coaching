@@ -46,6 +46,21 @@ function DodgeballSection() {
     );
 }
 
+function HockeySection() {
+    return (
+        <section id="hockey">
+            <h3 className="icon solid fa-sync">Hockey Club</h3>
+            <p>
+                Join us for our Hockey Club, held every Wednesday morning during term time at Latchmere School Sports Pitch from 08:00 to 08:45.
+                <br/><br/>
+                Fun hockey sessions designed to be both challenging and enjoyable. The children will get an opportunity to develop their skills and play mini matches.
+                <br/><br/>
+                Open to children from Year 3 to Year 6.
+            </p>
+        </section>
+    );
+}
+
 function BirthdayPartiesSection() {
     return (
         <section id="birthday">
@@ -101,7 +116,10 @@ export default function WhatWeOfferPage() {
                                 <div className="col-6 col-12-medium">
                                     <BirthdayPartiesSection />
                                 </div><br />
-                                <div className="col-12 col-12-medium">
+                                <div className="col-6 col-12-medium">
+                                    <HockeySection />
+                                </div><br />
+                                <div className="col-6 col-12-medium">
                                     <MultiSkillsClub />
                                 </div>
                             </div>

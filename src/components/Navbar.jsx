@@ -86,6 +86,13 @@ export default function Navbar() {
                             </li>
                             <li>
                                 <HashLink 
+                                    smooth to="/what-we-offer/#hockey" 
+                                    onClick={handleClick}>
+                                    Hockey Club
+                                </HashLink>
+                            </li>
+                            <li>
+                                <HashLink 
                                     smooth to="/what-we-offer/#birthday" 
                                     onClick={handleClick}>
                                     Birthday Parties
