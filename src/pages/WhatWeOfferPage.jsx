@@ -22,7 +22,7 @@ function MultiSkillsCamp() {
                 Children will be in groups with children of a similar age.
                 <br /><br />
                 We are also thrilled to announce some exhilarating additions to our 2024 camps, making the Move it! experience even more enjoyable for your child. 
-                New activities include laser tag, inflatables and access to the pupil kitchen where children can create and enjoy healthy snacks. Further additions will be added throughout the year!
+                New activities include swimming, laser tag, inflatables and access to the pupil kitchen where children can create and enjoy healthy snacks. Further additions will be added throughout the year!
                 <br /><br />
                 An example timetable for Multi Skills Club can be found below.
             </p>
