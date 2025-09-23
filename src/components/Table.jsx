@@ -46,7 +46,10 @@ export default function Timetable() {
             <td>10:50 AM - 12:00 PM</td>
             <td colSpan={2}>
                 Session 2<br />
-                <p>A range of running, tagging, dodging and ball games.</p>
+                <p>A range of running, tagging, dodging and ball games.<br />
+                Or<br />
+                An opportunity to participate in a wide range of enrichment activities (changing daily) e.g. swimming, making fruit smoothies, arts & crafts, dance workshop etc. 
+                </p>
             </td>
         </tr>
         
@@ -98,7 +101,10 @@ export default function Timetable() {
             <td>2:45 PM - 3:45 PM</td>
             <td colSpan={2}>
                 Extended day only:<br />
-                <p>A wide range of sports equipment available for children to play with.</p>
+                <p>
+                A wide range of sports equipment available for children to play with.
+                An extra opportunity to go on the bouncy castle
+                </p>
             </td>
         </tr>
         

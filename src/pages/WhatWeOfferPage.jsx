@@ -21,8 +21,10 @@ function MultiSkillsCamp() {
                 <br /><br />
                 Children will be in groups with children of a similar age.
                 <br /><br />
-                We are also thrilled to announce some exhilarating additions to our 2024 camps, making the Move it! experience even more enjoyable for your child. 
-                New activities include swimming, laser tag, inflatables and access to the pupil kitchen where children can create and enjoy healthy snacks. Further additions will be added throughout the year!
+                To make the Move it! experience even more enjoyable, we also offer enrichment activities such as swimming, laser tag, inflatables, arts & crafts, gardening, cheerleading workshops, smoothie making, and access to the pupil kitchen 
+                for healthy snack creation—we plan to add more exciting opportunities throughout the year. The enrichment activities are optional, giving children the flexibility to join as they wish.
+                <br /><br />
+                Facilities include an outdoor sports pitch, large indoor sports hall, swimming pool, pupil kitchen, dedicated art room, allotment patch, and a wide range of daily-use gymnastics equipment.
                 <br /><br />
                 An example timetable for Multi Skills Club can be found below.
             </p>
