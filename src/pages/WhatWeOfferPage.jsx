@@ -38,7 +38,7 @@ function DodgeballSection() {
         <section id="dodgeball">
             <h3 className="icon solid fa-sync">Dodgeball Club</h3>
             <p>
-                Join us for our Dodgeball Club, held every Monday evening during term time at Latchmere School Sports Hall from 17:00 to 17:45.
+                Join us for our Dodgeball Club, held every Wednesday evening during term time at Latchmere School from 15:30 - 16:25.
                 <br/><br/>
                 Experience the thrill of dodgeball through exciting games and activities that promote physical literacy by enhancing skills such as running, jumping, throwing, catching, and dodging.
                 <br/><br/>
