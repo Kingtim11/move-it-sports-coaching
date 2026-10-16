@@ -1,11 +1,11 @@
 import React from "react";
 import Card from '../components/Card';
 import Sections from "../components/Sections";
-import Josh from "../assets/images/josh.JPEG";
-import Abi from "../assets/images/coachAbi.jpg";
-import Neil from "../assets/images/coachNeilMin.jpg";
-import Hollie from "../assets/images/coachHollieMin.jpg";
-import Robert from "../assets/images/coachRobertMin.jpg";
+import Josh from "../assets/images/josh-web.jpg";
+import Abi from "../assets/images/coachAbi-web.jpg";
+import Neil from "../assets/images/coachNeil-web.jpg";
+import Hollie from "../assets/images/coachHollie-web.jpg";
+import Robert from "../assets/images/coachRobert-web.jpg";
 
 export default function MeetTheTeamPage() {
     const teamMembers = [

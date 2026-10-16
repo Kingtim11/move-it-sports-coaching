@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const whatWeOfferLinks = [
     { to: '/what-we-offer/#multi-skills-camp', label: 'Multi-skills Camp' },
@@ -55,7 +54,7 @@ export default function Navbar() {
         <nav className="navigation">
             <div className="nav-button-container">
                 <button className="nav-icon" onClick={toggleNav} aria-label={isNavExpanded ? 'Close menu' : 'Open menu'}>
-                    <FontAwesomeIcon icon={isNavExpanded ? faTimes : faBars} size="2xl" color="#2e99d6" />
+                    {isNavExpanded ? <FaTimes size="2em" color="#2e99d6" /> : <FaBars size="2em" color="#2e99d6" />}
                 </button>
             </div>
             <div className={navMenuClassName}>
