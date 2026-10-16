@@ -90,11 +90,26 @@ function WhatWeOfferSection() {
                                 <HashLink className='link-style1' to='/what-we-offer/#multi-skills-camp'><h3 className="icon fa-comment">Multi-skills Camp</h3></HashLink>
                                 <p>
                                 Runs every school holiday at Latchmere School in North Kingston.<br /><br />
-                                Enjoy a variety of engaging games and activities designed to develop fundamental 
-                                movement skills and foster a lifelong passion for sports.
+                                Our Ofsted-registered Multi-skills Camp is a fun-filled, active holiday camp designed to keep children moving, 
+                                engaged and having fun throughout the school holidays. With a predominantly sports-focused programme and a 
+                                fantastic range of enrichment activities, every day offers something different.
+                                <br /><br />
+                                Tax-Free Childcare vouchers are accepted.
                                 </p>
                             </section>
                         </div><br/>
+                        <div className="col-6 col-12-medium">
+                            <section>
+                                <HashLink className='link-style1' to='/what-we-offer/#football'><h3 className="icon fa-comment">Football Club</h3></HashLink>
+                                <p>
+                                Join us for our Football Club, held every Monday morning during term time at Latchmere School from 08:00 - 08:40.
+                                <br/><br/>
+                                Fun football sessions designed to be both challenging and enjoyable. The children will develop their football skills through a range of activities and games, finishing with opportunities to play mini matches.
+                                <br/><br/>
+                                Open to children from Reception - Year 2.
+                                </p>
+                            </section>
+                        </div>
                         <div className="col-6 col-12-medium">
                             <section>
                             <HashLink className='link-style1' to='/what-we-offer/#dodgeball'><h3 className="icon solid fa-sync">Dodgeball Club</h3></HashLink>
@@ -104,18 +119,6 @@ function WhatWeOfferSection() {
                                 Experience the thrill of dodgeball through exciting games and activities that promote physical literacy by enhancing skills such as running, jumping, throwing, catching, and dodging.
                                 <br/><br/>
                                 Open to children from Year 3 to Year 6.
-                                </p>
-                            </section>
-                        </div>
-                        <div className="col-6 col-12-medium">
-                            <section>
-                            <HashLink className='link-style1' to='/what-we-offer/#birthday'><h3 className="icon fa-image">Birthday Parties</h3></HashLink>
-                                <p>
-                                We understand that each child is different, so we tailor our birthday parties to suit their specific interests and preferences.
-                                <br/><br/>
-                                The most popular party options we receive are either sport-specific parties or multi-skills parties. Our sport-specific parties focus on a particular sport, while our multi-skills parties incorporate a variety of activities such as running, tagging, dodging, and ball games.
-                                <br/><br/>
-                                Contact us today to discuss how we can create an unforgettable birthday experience for your child.
                                 </p>
                             </section>
                         </div><br />
@@ -140,6 +143,18 @@ function WhatWeOfferSection() {
                                 Play a wide range of running, dodging, tagging and ball games specifically designed to develop fundamental movement skills.
                                 <br/><br/>
                                 Open to children from Reception - Year 2. 
+                                </p>
+                            </section>
+                        </div><br />
+                        <div className="col-12 col-12-medium">
+                            <section>
+                            <HashLink className='link-style1' to='/what-we-offer/#birthday'><h3 className="icon fa-image">Birthday Parties</h3></HashLink>
+                                <p>
+                                We understand that each child is different, so we tailor our birthday parties to suit their specific interests and preferences.
+                                <br/><br/>
+                                The most popular party options we receive are either sport-specific parties or multi-skills parties. Our sport-specific parties focus on a particular sport, while our multi-skills parties incorporate a variety of activities such as running, tagging, dodging, and ball games.
+                                <br/><br/>
+                                Contact us today to discuss how we can create an unforgettable birthday experience for your child.
                                 </p>
                             </section>
                         </div>
