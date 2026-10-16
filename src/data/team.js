@@ -1,10 +1,10 @@
 // Coaches shown on the Meet the Team page. The first coach is also shown on the Home page.
 // Each string in a bio list is shown as its own paragraph.
-import Josh from '../assets/images/josh-web.jpg';
-import Abi from '../assets/images/coachAbi-web.jpg';
-import Neil from '../assets/images/coachNeil-web.jpg';
-import Hollie from '../assets/images/coachHollie-web.jpg';
-import Robert from '../assets/images/coachRobert-web.jpg';
+import Josh from '../assets/images/josh.JPEG';
+import Abi from '../assets/images/coachAbi.jpg';
+import Neil from '../assets/images/coachNeilMin.jpg';
+import Hollie from '../assets/images/coachHollieMin.jpg';
+import Robert from '../assets/images/coachRobertMin.jpg';
 
 export const team = [
     {

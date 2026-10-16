@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Card from '../components/Card';
 import ContactForm from '../components/ContactForm';
-import Banner from '../assets/images/banner-web.jpg';
+import Banner from '../assets/images/bannerMin.jpg';
 import Logo from "../assets/images/moveit3.jpeg";
 import Sections from '../components/Sections';
 import ClubList from '../components/ClubList';
