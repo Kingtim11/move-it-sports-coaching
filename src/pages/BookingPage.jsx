@@ -17,7 +17,7 @@ export default function BookingPage() {
     ];
 
     return (
-        <div className="bookingpage is-preloaded">
+        <div className="subpage">
             <div id='page-wrapper'>
                 {sections.map((section, index) => (
                     <React.Fragment key={index}>

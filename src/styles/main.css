@@ -87,17 +87,6 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-		-moz-animation: none !important;
-		-webkit-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-		-moz-transition: none !important;
-		-webkit-transition: none !important;
-		-ms-transition: none !important;
-		transition: none !important;
-	}
-
 	button {
 		font-family: 'Source Sans Pro', sans-serif;
 	}
@@ -1863,6 +1852,12 @@ input, select, textarea {
 				padding-top: 0;
 			}
 
+			/* The club list starts with a full-width item, so only the first item has no divider */
+			.feature-list.clubs > .row > :nth-child(2) > section {
+				border-top: solid 1px #eee;
+				padding-top: 3em;
+			}
+
 		}
 
 		.feature-list h3 {
@@ -1894,44 +1889,6 @@ input, select, textarea {
 		.feature-list.small h3:before {
 			font-size: 0.8em;
 		}
-
-/* Icons */
-
-	.icon {
-		text-decoration: none;
-		text-decoration: none;
-	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
-
-		.icon:before {
-			line-height: inherit;
-			font-size: 1.25em;
-		}
-
-		.icon > .label {
-			display: none;
-		}
-
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		}
-		
 
 /* Box */
 
@@ -2130,14 +2087,14 @@ input, select, textarea {
 		.homepage #header {
 			height: 35em;
 		}
-		.bookingpage #header {
+		.subpage #header {
 			height: 1em;
 		}
 		@media screen and (max-width: 736px) {
-			.bookingpage #header {
+			.subpage #header {
 				height: 1em;
 			}
-			.bookingpage .wrapper {
+			.subpage .wrapper {
 				padding: 3em 0 2em 0;
 			}
 		}

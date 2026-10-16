@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 import Card from '../components/Card';
 import ContactForm from '../components/ContactForm';
 import Banner from '../assets/images/banner-web.jpg';
-import Josh from "../assets/images/josh-web.jpg";
 import Logo from "../assets/images/moveit3.jpeg";
 import Sections from '../components/Sections';
+import ClubList from '../components/ClubList';
+import Paragraphs from '../components/Paragraphs';
+import { team } from '../data/team';
 import { FaInstagram } from 'react-icons/fa';
 
 const HomePageSections = [
@@ -77,119 +78,31 @@ function IntroSection() {
 
 function WhatWeOfferSection() {
     return (
-        <>
-            <section id="features">
-                <header className="style1">
-                    <p>We have a team of dedicated coaches on hand to provide the following sessions</p>
-                </header>
-                <div className="feature-list">
-                    <div className="row">
-                        <div className="col-12 col-12-medium">
-                            <section>
-                                <HashLink className='link-style1' to='/what-we-offer/#multi-skills-camp'><h3 className="icon fa-comment">Multi-skills Camp</h3></HashLink>
-                                <p>
-                                Runs every school holiday at Latchmere School in North Kingston.<br /><br />
-                                Our Ofsted-registered Multi-skills Camp is a fun-filled, active holiday camp designed to keep children moving, 
-                                engaged and having fun throughout the school holidays. With a predominantly sports-focused programme and a 
-                                fantastic range of enrichment activities, every day offers something different.
-                                <br /><br />
-                                Tax-Free Childcare vouchers are accepted.
-                                </p>
-                            </section>
-                        </div><br/>
-                        <div className="col-6 col-12-medium">
-                            <section>
-                                <HashLink className='link-style1' to='/what-we-offer/#football'><h3 className="icon fa-comment">Football Club</h3></HashLink>
-                                <p>
-                                Join us for our Football Club, held every Monday morning during term time at Latchmere School from 08:00 - 08:40.
-                                <br/><br/>
-                                Fun football sessions designed to be both challenging and enjoyable. The children will develop their football skills through a range of activities and games, finishing with opportunities to play mini matches.
-                                <br/><br/>
-                                Open to children from Reception - Year 2.
-                                </p>
-                            </section>
-                        </div>
-                        <div className="col-6 col-12-medium">
-                            <section>
-                            <HashLink className='link-style1' to='/what-we-offer/#dodgeball'><h3 className="icon solid fa-sync">Dodgeball Club</h3></HashLink>
-                                <p>
-                                Join us for our Dodgeball Club, held every Wednesday evening during term time at Latchmere School from 15:30 - 16:25.
-                                <br/><br/>
-                                Experience the thrill of dodgeball through exciting games and activities that promote physical literacy by enhancing skills such as running, jumping, throwing, catching, and dodging.
-                                <br/><br/>
-                                Open to children from Year 3 to Year 6.
-                                </p>
-                            </section>
-                        </div><br />
-                        <div className="col-6 col-12-medium">
-                            <section>
-                                <HashLink className='link-style1' to='/what-we-offer/#hockey'><h3 className="icon fa-comment">Hockey Club</h3></HashLink>
-                                <p>
-                                Join us for our Hockey Club, held every Wednesday morning during term time at Latchmere School Sports Pitch from 08:00 to 08:45.
-                                <br/><br/>
-                                Fun hockey sessions designed to be both challenging and enjoyable. The children will get an opportunity to develop their skills and play mini matches.
-                                <br/><br/>
-                                Open to children from Year 3 to Year 6. 
-                                </p>
-                            </section>
-                        </div>
-                        <div className="col-6 col-12-medium">
-                            <section>
-                                <HashLink className='link-style1' to='/what-we-offer/#multi-skills-club'><h3 className="icon fa-comment">Multi-skills Club</h3></HashLink>
-                                <p>
-                                Join us for our Multi Skills Club, held every Friday morning during term time at Latchmere School Sports Hall from 08:00 to 08:45.
-                                <br/><br/>
-                                Play a wide range of running, dodging, tagging and ball games specifically designed to develop fundamental movement skills.
-                                <br/><br/>
-                                Open to children from Reception - Year 2. 
-                                </p>
-                            </section>
-                        </div><br />
-                        <div className="col-12 col-12-medium">
-                            <section>
-                            <HashLink className='link-style1' to='/what-we-offer/#birthday'><h3 className="icon fa-image">Birthday Parties</h3></HashLink>
-                                <p>
-                                We understand that each child is different, so we tailor our birthday parties to suit their specific interests and preferences.
-                                <br/><br/>
-                                The most popular party options we receive are either sport-specific parties or multi-skills parties. Our sport-specific parties focus on a particular sport, while our multi-skills parties incorporate a variety of activities such as running, tagging, dodging, and ball games.
-                                <br/><br/>
-                                Contact us today to discuss how we can create an unforgettable birthday experience for your child.
-                                </p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-                <ul className="actions special">
-                    <li>
-                        <Link className="button style1 large" to="/bookings">Bookings</Link>
-                    </li>
-                </ul>
-            </section>
-        </>
+        <section id="features">
+            <header className="style1">
+                <p>We have a team of dedicated coaches on hand to provide the following sessions</p>
+            </header>
+            <ClubList />
+            <ul className="actions special">
+                <li>
+                    <Link className="button style1 large" to="/bookings">Bookings</Link>
+                </li>
+            </ul>
+        </section>
     )
 }
 
 function MeetTheTeamSection() {
+    const leadCoach = team[0];
     return (
         <>
             <div className="row aln-center">
                 <div className="col-4 col-12-medium">
                     <Card
-                        image={Josh}
-                        hashString="LzOyO^i_?^bb?^W;t8ofIVkCV?n%"
-                        teamMember="Josh - Lead Coach" 
-                        description={
-                        <>
-                            Joshua Ayres, lead coach and founder of Move it Sports Coaching.
-                            <br/><br/>
-                            "I started Move it Sports Coaching over six years ago, previously under the name ‘Joshua Ayres Sports Coaching’, 
-                            with the single vision to encourage lifelong participation in sport and physical activity for 
-                            all children".
-                            <br/><br/>
-                            Coach Josh has over 15 years coaching experience and is a qualified primary school teacher 
-                            with a degree in Physical Education, Sport and Activity.
-                        </>
-                        }
+                        image={leadCoach.image}
+                        hashString={leadCoach.hashString}
+                        teamMember={leadCoach.name}
+                        description={<Paragraphs items={leadCoach.bio} />}
                     />
                 </div>
             </div>
@@ -222,7 +135,7 @@ function ContactSection() {
                         <div className="row">
                             <div className="col-6 col-12-small">
                                 <section>
-                                    <h3 className="icon solid fa-envelope">Email</h3>
+                                    <h3>Email</h3>
                                     <p>
                                         <a className="link-style2" href="mailto:enquiries@moveitsportscoaching.co.uk">enquiries@moveitsportscoaching.co.uk</a>
                                     </p>
@@ -230,7 +143,7 @@ function ContactSection() {
                             </div>
                             <div className="col-6 col-12-small">
                                 <section>
-                                    <h3 className="icon solid fa-comment">Social</h3>
+                                    <h3>Social</h3>
                                     <a href="https://www.instagram.com/moveitsportscoaching/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" rel="noopener noreferrer">
                                     <FaInstagram size={20} color="currentColor" />
                                         <p style={{color: 'white'}}>Follow us on Instagram</p>
@@ -261,7 +174,7 @@ function FooterSection() {
 
 export default function HomePage() {
     return (
-        <div className='homepage is-preload'>
+        <div className='homepage'>
             <div id='page-wrapper'>
                 {HomePageSections.map((section, index) => (
                     <React.Fragment key={index}>
