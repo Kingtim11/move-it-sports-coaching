@@ -4,33 +4,35 @@ import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-function NavMenuItem({ to, children, onClick }) {
-    return (
-        <li>
-            <Link to={to} onClick={onClick}>
-                {children}
-            </Link>
-        </li>
-    );
-}
+const whatWeOfferLinks = [
+    { to: '/what-we-offer/#multi-skills-camp', label: 'Multi-skills Camp' },
+    { to: '/what-we-offer/#multi-skills-club', label: 'Multi-skills Club' },
+    { to: '/what-we-offer/#football', label: 'Football Club' },
+    { to: '/what-we-offer/#dodgeball', label: 'Dodgeball Club' },
+    { to: '/what-we-offer/#hockey', label: 'Hockey Club' },
+    { to: '/what-we-offer/#birthday', label: 'Birthday Parties' },
+];
 
 export default function Navbar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-    function handleClick() {
+    function toggleNav() {
         setIsNavExpanded(!isNavExpanded);
+    }
+
+    function closeNav() {
+        setIsNavExpanded(false);
     }
 
     useEffect(() => {
         function handleClickOutside(event) {
             if (!event.target.closest('.nav-menu') && !event.target.closest('.nav-icon')) {
-                document.body.setAttribute('id', 'nav-menu');
                 setIsNavExpanded(false);
             }
         }
         document.addEventListener('click', handleClickOutside);
 
-        // Add event listener for screen width and navbar expansion
+        // Lock page scrolling while the mobile menu is open
         function handleResize() {
             if (window.innerWidth < 770 && isNavExpanded) {
                 document.body.style.overflowY = 'hidden';
@@ -38,7 +40,6 @@ export default function Navbar() {
                 document.body.style.overflowY = 'visible';
             }
         }
-        // Call the handleResize initially and whenever isNavExpanded changes
         handleResize();
         window.addEventListener('resize', handleResize);
 
@@ -53,62 +54,26 @@ export default function Navbar() {
     return (
         <nav className="navigation">
             <div className="nav-button-container">
-                <button className="nav-icon" onClick={handleClick}>
+                <button className="nav-icon" onClick={toggleNav} aria-label={isNavExpanded ? 'Close menu' : 'Open menu'}>
                     <FontAwesomeIcon icon={isNavExpanded ? faTimes : faBars} size="2xl" color="#2e99d6" />
                 </button>
             </div>
             <div className={navMenuClassName}>
                 <ul>
-                    <NavMenuItem to="/" onClick={handleClick}>Home</NavMenuItem>
-                    
-                    <NavMenuItem to="/what-we-offer" onClick={handleClick}>What we Offer
-                        <ul className='submenu'>
-                            <li>
-                                <HashLink 
-                                    smooth to="/what-we-offer/#multi-skills-camp" 
-                                    onClick={handleClick}>
-                                    Multi-skills Camp
-                                </HashLink>
-                            </li>
-                            <li>
-                                <HashLink 
-                                    smooth to="/what-we-offer/#multi-skills-club" 
-                                    onClick={handleClick}>
-                                    Multi-skills Club
-                                </HashLink>
-                            </li>
-                            <li>
-                                <HashLink 
-                                    smooth to="/what-we-offer/#dodgeball" 
-                                    onClick={handleClick}>
-                                    Dodgeball Club
-                                </HashLink>
-                            </li>
-                            <li>
-                                <HashLink 
-                                    smooth to="/what-we-offer/#hockey" 
-                                    onClick={handleClick}>
-                                    Hockey Club
-                                </HashLink>
-                            </li>
-                            <li>
-                                <HashLink 
-                                    smooth to="/what-we-offer/#birthday" 
-                                    onClick={handleClick}>
-                                    Birthday Parties
-                                </HashLink>
-                            </li>
-                        </ul>
-                    </NavMenuItem>
-                    <NavMenuItem to="/meet-the-team" onClick={handleClick}>Meet the team</NavMenuItem>
-                    <NavMenuItem to="/bookings" onClick={handleClick}>Bookings</NavMenuItem>
+                    <li><Link to="/" onClick={closeNav}>Home</Link></li>
                     <li>
-                        <HashLink
-                            smooth to="/#contact"
-                            onClick={handleClick}>
-                            Contact
-                        </HashLink>
+                        <Link to="/what-we-offer" onClick={closeNav}>What we Offer</Link>
+                        <ul className="submenu">
+                            {whatWeOfferLinks.map(({ to, label }) => (
+                                <li key={to}>
+                                    <HashLink smooth to={to} onClick={closeNav}>{label}</HashLink>
+                                </li>
+                            ))}
+                        </ul>
                     </li>
+                    <li><Link to="/meet-the-team" onClick={closeNav}>Meet the team</Link></li>
+                    <li><Link to="/bookings" onClick={closeNav}>Bookings</Link></li>
+                    <li><HashLink smooth to="/#contact" onClick={closeNav}>Contact</HashLink></li>
                 </ul>
             </div>
         </nav>

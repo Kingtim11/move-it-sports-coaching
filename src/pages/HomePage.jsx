@@ -162,7 +162,7 @@ function WhatWeOfferSection() {
                 </div>
                 <ul className="actions special">
                     <li>
-                        <Link to="bookings">
+                        <Link to="/bookings">
                             <Button name="Bookings" buttonStyle="button style1 large" />
                         </Link>
                     </li>
@@ -229,7 +229,7 @@ function ContactSection() {
                                 <section>
                                     <h3 className="icon solid fa-envelope">Email</h3>
                                     <p>
-                                        <Link className='link-style2' to="mailto:enquiries@moveitsportscoaching.co.uk">enquiries@moveitsportscoaching.co.uk</Link>
+                                        <a className="link-style2" href="mailto:enquiries@moveitsportscoaching.co.uk">enquiries@moveitsportscoaching.co.uk</a>
                                     </p>
                                 </section>
                             </div>
@@ -255,9 +255,9 @@ function FooterSection() {
     return (
         <div id="copyright">
             <ul>
-                <li>© 2023 Move it! Sports Coaching Ltd. All rights reserved.</li>
+                <li>© {new Date().getFullYear()} Move it! Sports Coaching Ltd. All rights reserved.</li>
                 {/*<li>Web Development: <Link className='link-style2' to="https://timking.netlify.app/">Tim King</Link></li>*/}
-                <li>Design: <Link className='link-style2' to="http://html5up.net">HTML5 UP</Link></li>
+                <li>Design: <a className="link-style2" href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
                 <p>Move it! Sports Coaching Ltd is a company registered in England and Wales with Company Number 14588755</p>
             </ul>
         </div>

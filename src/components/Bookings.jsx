@@ -41,8 +41,7 @@ export default function Bookings() {
           src={bookingFormURL}
           width="100%"
           height="860px"
-          title="A booking form for Joshua Ayres Sports Coaching"
-          sandbox
+          title="Move it! Sports Coaching booking form"
         ></iframe>
       </div>
     </>

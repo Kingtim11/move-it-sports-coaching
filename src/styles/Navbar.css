@@ -217,3 +217,12 @@
             width: 220px;
         }
     }
+    /*Submenu text styles (previously inherited from the parent link)*/
+    .nav-menu .submenu {
+        font-size: 0.7em;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+    }
+        .nav-menu .submenu a {
+            text-decoration: none;
+        }
