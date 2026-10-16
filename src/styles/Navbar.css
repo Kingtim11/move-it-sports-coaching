@@ -196,6 +196,10 @@
                 background-color: rgba(46,153,214, 0);
                 transition: transform 2s ease;
             }
+            /*Stop the icon being squashed to zero width by the button's padding*/
+            .nav-icon svg {
+                flex-shrink: 0;
+            }
             .nav-icon:hover {
                 color: rgba(46,153,214, 0.9);
                 background-color: rgba(46,153,214, 0);
