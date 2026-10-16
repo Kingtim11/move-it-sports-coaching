@@ -3315,3 +3315,15 @@ input, select, textarea {
 		font-size: larger;
 		padding-top: 2.2em;
 	}
+/* Bookings: keep the two booking buttons aligned horizontally */
+
+	.booking-option {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+		.booking-option > a {
+			margin-top: auto;
+			align-self: center;
+		}

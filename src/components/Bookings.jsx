@@ -10,7 +10,7 @@ export default function Bookings() {
     <>
       <div className="row">
         <div className="col-6 col-12-medium">
-          <section>
+          <section className="booking-option">
             <h3>Book Your Child's Place</h3>
             <p>
               You can book your child's place for our holiday camps and weekly clubs using the link below,
@@ -22,7 +22,7 @@ export default function Bookings() {
           </section>
         </div>
         <div className="col-6 col-12-medium">
-          <section>
+          <section className="booking-option">
             <h3>Using Tax-Free Childcare?</h3>
             <p>
               If you would like to pay for a holiday camp using Tax-Free Childcare, please book via the link below.
