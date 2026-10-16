@@ -1,13 +1,13 @@
-import '../src/styles/main.css';
-import '../src/styles/Navbar.css';
+import './styles/main.css';
+import './styles/Navbar.css';
 import { 
   Route, 
   RouterProvider, 
   createBrowserRouter, 
   createRoutesFromElements 
 } from 'react-router-dom';
-import Home from '../src/pages/HomePage';
-import BookingPage from '../src/pages/BookingPage';
+import Home from './pages/HomePage';
+import BookingPage from './pages/BookingPage';
 import WhatWeOfferPage from './pages/WhatWeOfferPage';
 import MeetTheTeamPage from './pages/MeetTheTeamPage';
 import RootLayout from './layouts/RootLayout';
