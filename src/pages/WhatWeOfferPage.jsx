@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Sections from "../components/Sections";
-import Button from "../components/Button";
-import Table from "../components/Table";
+import Timetable from "../components/Timetable";
 
 function MultiSkillsCamp() {
     return (
@@ -62,7 +61,7 @@ function MultiSkillsCamp() {
                 <br /><br />
                 An example timetable for Multi-skills Camp can be found below.
             </p>
-            <Table />
+            <Timetable />
         </section>
     );
 }
@@ -180,9 +179,7 @@ export default function WhatWeOfferPage() {
                         </div>
                         <ul className="actions special">
                             <li>
-                                <Link to="/bookings">
-                                    <Button name="Bookings" buttonStyle="button style1 large" />
-                                </Link>
+                                <Link className="button style1 large" to="/bookings">Bookings</Link>
                             </li>
                         </ul>
                     </section>

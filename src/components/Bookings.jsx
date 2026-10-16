@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "./Button";
 
 const bookingFormURL = "https://move-it-sports-coaching.classforkids.io/";
 const campsBookingURL = "https://move-it-sports-coaching.classforkids.io/camps";
@@ -16,8 +15,8 @@ export default function Bookings() {
               You can book your child's place for our holiday camps and weekly clubs using the link below,
               or using the booking form further down this page.
             </p>
-            <a href={campsBookingURL} target="_blank" rel="noopener noreferrer">
-              <Button name="Book Now" buttonStyle="button style1" />
+            <a className="button style1" href={campsBookingURL} target="_blank" rel="noopener noreferrer">
+              Book Now
             </a>
           </section>
         </div>
@@ -28,8 +27,8 @@ export default function Bookings() {
               If you would like to pay for a holiday camp using Tax-Free Childcare, please book via the link below.
               The first time you use this link, you will need to create an account.
             </p>
-            <a href={taxFreeChildcareBookingURL} target="_blank" rel="noopener noreferrer">
-              <Button name="Book with Tax-Free Childcare" buttonStyle="button style1" />
+            <a className="button style1" href={taxFreeChildcareBookingURL} target="_blank" rel="noopener noreferrer">
+              Book with Tax-Free Childcare
             </a>
           </section>
         </div>

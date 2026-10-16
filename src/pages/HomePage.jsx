@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Button from '../components/Button';
 import Card from '../components/Card';
 import ContactForm from '../components/ContactForm';
 import Banner from '../assets/images/bannerMin.jpg';
@@ -162,9 +161,7 @@ function WhatWeOfferSection() {
                 </div>
                 <ul className="actions special">
                     <li>
-                        <Link to="/bookings">
-                            <Button name="Bookings" buttonStyle="button style1 large" />
-                        </Link>
+                        <Link className="button style1 large" to="/bookings">Bookings</Link>
                     </li>
                 </ul>
             </section>
@@ -198,9 +195,7 @@ function MeetTheTeamSection() {
             </div>
             <ul className="actions">
                 <li>
-                    <Link to="/meet-the-team">
-                        <Button name="Other Coaches" buttonStyle="button style1" />
-                    </Link>
+                    <Link className="button style1" to="/meet-the-team">Other Coaches</Link>
                 </li>
             </ul>
         </>
